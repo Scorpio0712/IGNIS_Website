@@ -65,12 +65,11 @@ a {
 
 .sub-name {
     font-size: 32px;
-    font-weight: semi-bold;
     color: var(--text-color);
     line-height: 0.8;
 }
 
-/* content 1 */
+/* Story IGNIS */
 .container-story {
     margin-top: 15%;
     width: 100%;
@@ -78,7 +77,7 @@ a {
     border: 1px solid #ccc;
 }
 
-.col-story {
+.col-story1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,8 +86,8 @@ a {
     border: 1px solid #ccc;
 }
 
-.container-storypara {
-    font-size: 24px;
+.container-storypara1 {
+    font-size: 22px;
     width: 80%;
     color: var(--text-color);
     line-height: 1.5;
@@ -96,24 +95,142 @@ a {
     text-align: justify;
     border: 1px solid #ccc;
 }
+
 .paragraph1 span {
     font-weight: bold;
     font-size: 40px;
     color: var(--primary-color);
 }
 
-.container-storypic {
+.container-storypic1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: auto;
     border: 1px solid #ccc;
 }
 
-.content-pic {
+.content-pic1, .content-pic2 {
     width: 80%;
     height: 100%;
     object-fit: cover;
     border: 1px solid #ccc;
+}
+
+.col-story2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.container-storypara2 {
+    margin-top: 20%;
+    font-size: 22px;
+    width: 80%;
+    color: var(--text-color);
+    line-height: 1.5;
+    text-indent: 10%;
+    text-align: justify;
+    border: 1px solid #ccc;
+}
+
+
+.container-storypic2 {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+
+/* FFQ Content */
+.container_FFQ {
+    margin-top: 15%;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.headTopic_FFQ {
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.intro_FFQ {
+    margin-top: 20px;
+    font-size: 22px;
+    width: 78%;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.content_FFQ {
+    margin-top: 2.5%;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.paragraph_Flexible,
+.paragraph_Friendly, .paragraph_Quality {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.topic_Flexible ,
+.topic_Friendly ,
+.topic_Quality  {
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.story_Flexible,
+.story_Friendly,
+.story_Quality {
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.outro_FFQ {
+    margin-top: 2.5%;
+    font-size: 22px;
+    width: 50%;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+/* 2 Type, 4 Theme */
+.container_2Type {
+    margin-top: 15%;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.topic_2Type{
+    color: var(--text-color);
 }
