@@ -1,5 +1,11 @@
 @import url('style.css');
 
+.body-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/******************************** Navbar ********************************/
 .navbar {
     background-color: var(--primary-color);
 }
@@ -27,12 +33,7 @@ a {
     background-color: var(--primary-color);
 }
 
-.body-container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-/* Carosel Slide */
+/******************************** Header ********************************/
 .container-header {
     width: 100%;
     margin: 1% 0 auto 0;
@@ -69,7 +70,7 @@ a {
     line-height: 0.8;
 }
 
-/* Story IGNIS */
+/******************************** Story IGNIS ********************************/
 .container-story {
     margin-top: 15%;
     width: 100%;
@@ -111,7 +112,8 @@ a {
     border: 1px solid #ccc;
 }
 
-.content-pic1, .content-pic2 {
+.content-pic1,
+.content-pic2 {
     width: 80%;
     height: 100%;
     object-fit: cover;
@@ -150,7 +152,7 @@ a {
 }
 
 
-/* FFQ Content */
+/******************************** FFQ Content ********************************/
 .container_FFQ {
     margin-top: 15%;
     width: 100%;
@@ -183,8 +185,9 @@ a {
 }
 
 .paragraph_Flexible,
-.paragraph_Friendly, .paragraph_Quality {
-    
+.paragraph_Friendly,
+.paragraph_Quality {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,9 +196,9 @@ a {
     border: 1px solid #ccc;
 }
 
-.topic_Flexible ,
-.topic_Friendly ,
-.topic_Quality  {
+.topic_Flexible,
+.topic_Friendly,
+.topic_Quality {
     width: 100%;
     text-align: center;
     color: var(--text-color);
@@ -220,7 +223,8 @@ a {
     color: var(--text-color);
     border: 1px solid #ccc;
 }
-/* 2 Type, 4 Theme */
+
+/******************************** 2 Type, 4 Theme ********************************/
 .container_2Type {
     margin-top: 15%;
     width: 100%;
@@ -231,6 +235,121 @@ a {
     align-items: center;
     border: 1px solid #ccc;
 }
-.topic_2Type{
+
+.topic_2Type {
+    color: var(--text-color);
+}
+
+.firePic_2Type_Container, .pixelLightPic_2Type_Container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.firePic_2Type {
+    width: 55%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+.pixelLightPic_2Type {
+    width: 65%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+.topic_Fire_Container, .topic_PixelLight_Container {
+    margin-top: 3%;
+    font-size: 32px;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+.content_Fire_Container, .content_PixelLight_Container {
+    margin-top: 2%;
+    font-size: 22px;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+.content_Fire_Paragrahp, .content_PixelLight_Paragrahp {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/******************************** Customers ********************************/
+.container_Customers {
+    margin-top: 15%;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.topic_Customers {
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+.customers_Pic_Container{
+    margin-top: 1.5%;
+    display: flex; 
+    overflow: hidden;
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+.customers_Pic_Slider {
+    display: flex;
+    width: calc(200%); /* 2 เท่าของ container */
+    animation: scroll-left 20s linear infinite;
+}
+.customers_Pic {
+    width: 100%; /* กว้างเท่ากับ container */
+    height: 100%;
+    object-fit: contain;
+}
+@keyframes scroll-left {
+   0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* เลื่อนเท่ากับความกว้างของภาพเดียว */
+    }
+}
+/******************************** Footer ********************************/
+.footer-Container {
+    margin-top: 10%;
+    height: 130px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.footer-Icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%; /* ระยะห่างระหว่างโลโก้ */
+    margin-bottom: 8px;
+}
+.facebook_Button, .gmail_Button, .whatapps_Button {
+    margin-bottom: 0; /* ยกเลิก margin ล่างเดิม */
+}
+.facebook_Icon, .gmail_Icon, .whatapps_Icon {
+    width: 45px;
+    height: 45px;
+}
+.footer_text {
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: var(--text-color);
 }
