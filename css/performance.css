@@ -4,11 +4,11 @@
 .performance_TopicPic {
     width: 100%;
     height: 500px;
-    border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 2.5%;
     position: relative;
     overflow: hidden;
     text-align: center;
+    border: 1px solid #ccc;
 }
 
 .performance_TopicPic::before {
@@ -33,4 +33,107 @@
     color: var(--text-color);
     line-height: 500px;
     z-index: 2;
+}
+
+.performance_Intro {
+    width: 100%;
+    margin-top: 10%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.performance_IntroParagraph {
+    width: 80%;
+    font-size: 22px;
+    color: var(--text-color);
+    line-height: 1.5;
+    text-align: center;
+}
+
+/********************* Fire Performance Content *********************/
+.firePerformance_Container {
+    width: 100%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.firePerformance_Topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firePerformance_TopicText {
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--text-color, #fff);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+}
+
+.firePerformance_TopicText::before,
+.firePerformance_TopicText::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 450px;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    margin: 0 18px;
+    border-radius: 2px;
+}
+
+.firePerformance_TopicText::after {
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+.firePerformance_Content {
+    width: 100%;
+    margin-top: 2.5%;
+
+    /* border: 1px solid #ccc; */
+}
+
+.firePerformance_PicRow1, .firePerformance_PicRow2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border: 1px solid #ccc;
+}
+.firePerformance_PicRow2 {
+    margin-top: 5%;
+}
+
+.firePerformance_Pic1,
+.firePerformance_Pic2,
+.firePerformance_Pic3, .firePerformance_Pic4, .firePerformance_Pic5, .firePerformance_Pic6 {
+    width: 380px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.firePerformance_Paragraph {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.firePerformance_ParagraphText {
+    width: 70%;
+    font-size: 22px;
+    color: var(--text-color);
+    line-height: 1.5;
+    
+
 }
