@@ -18,3 +18,65 @@ body {
     --secondary-color: #000000;
     --text-color: #FFFFFF;
 }
+
+.body-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/******************************* Navbar *******************************/
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.nav-container {
+    width: 1680px;
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+a {
+    font-size: 18px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: gray;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+}
+
+/******************************** Footer ********************************/
+.footer-Container {
+    margin-top: 10%;
+    height: 130px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.footer-Icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%; /* ระยะห่างระหว่างโลโก้ */
+    margin-bottom: 8px;
+}
+.facebook_Button, .gmail_Button, .whatapps_Button {
+    margin-bottom: 0; /* ยกเลิก margin ล่างเดิม */
+}
+.facebook_Icon, .gmail_Icon, .whatapps_Icon {
+    width: 45px;
+    height: 45px;
+}
+.footer_text {
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
