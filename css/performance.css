@@ -8,7 +8,6 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    border: 1px solid #ccc;
 }
 
 .performance_TopicPic::before {
@@ -42,7 +41,6 @@
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid #ccc;
 }
 
 .performance_IntroParagraph {
@@ -53,21 +51,23 @@
     text-align: center;
 }
 
-/********************* Fire Performance Content *********************/
-.firePerformance_Container {
+/********************* Fire & Pixel Light performance Content *********************/
+.firePerformance_Container,
+.pixellightPerformance_Container {
     width: 100%;
     margin-top: 10%;
     box-sizing: border-box;
-    border: 1px solid #ccc;
 }
 
-.firePerformance_Topic {
+.firePerformance_Topic,
+.pixellightPerformance_Topic {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.firePerformance_TopicText {
+.firePerformance_TopicText,
+.pixellightPerformance_TopicText {
     position: relative;
     font-size: 48px;
     font-weight: bold;
@@ -88,52 +88,95 @@
     border-radius: 2px;
 }
 
-.firePerformance_TopicText::after {
+.pixellightPerformance_TopicText::before,
+.pixellightPerformance_TopicText::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 375px;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    margin: 0 18px;
+    border-radius: 2px;
+}
+
+.firePerformance_TopicText::after,
+.pixellightPerformance_TopicText::after {
     background: linear-gradient(to left, transparent, #fff, transparent);
 }
 
-.firePerformance_Content {
+.firePerformance_Content,
+.pixellightPerformance_Content {
     width: 100%;
     margin-top: 2.5%;
-
-    /* border: 1px solid #ccc; */
 }
 
-.firePerformance_PicRow1, .firePerformance_PicRow2 {
+.firePerformance_PicRow1,
+.firePerformance_PicRow2,
+.pixellightPerformance_PicRow1,
+.pixellightPerformance_PicRow2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
-    border: 1px solid #ccc;
 }
-.firePerformance_PicRow2 {
+
+.firePerformance_PicRow2,
+.pixellightPerformance_PicRow2 {
     margin-top: 5%;
 }
 
 .firePerformance_Pic1,
 .firePerformance_Pic2,
-.firePerformance_Pic3, .firePerformance_Pic4, .firePerformance_Pic5, .firePerformance_Pic6 {
+.firePerformance_Pic3,
+.firePerformance_Pic4,
+.firePerformance_Pic5,
+.firePerformance_Pic6,
+.pixellightPerformance_Pic1,
+.pixellightPerformance_Pic2,
+.pixellightPerformance_Pic3,
+.pixellightPerformance_Pic4,
+.pixellightPerformance_Pic5,
+.pixellightPerformance_Pic6 {
     width: 380px;
     height: 200px;
     object-fit: cover;
-    border: 1px solid #ccc;
 }
 
-.firePerformance_Paragraph {
+.firePerformance_Paragraph,
+.pixellightPerformance_Paragraph {
     width: 100%;
     margin-top: 5%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
 }
 
-.firePerformance_ParagraphText {
+.firePerformance_ParagraphText,
+.pixellightPerformance_ParagraphText {
     width: 70%;
     font-size: 22px;
     color: var(--text-color);
     line-height: 1.5;
-    
+}
 
+.firePerformance_Button, .pixellightPerformance_Button {
+    width: 100%;
+    margin-top: 2.5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firePerformance_Button button, .pixellightPerformance_Button button {
+    font-size: 24px;
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.firePerformance_Button button:hover, .pixellightPerformance_Button button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
 }
