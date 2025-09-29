@@ -1,5 +1,24 @@
 @import url('style.css');
 
+/********************* Performance Intro *********************/
+
+.performance_Intro {
+    width: 100%;
+    margin-top: 10%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.performance_IntroParagraph {
+    width: 80%;
+    font-size: 22px;
+    color: var(--text-color);
+    line-height: 1.5;
+    text-align: center;
+}
+
 /********************* Fire & Pixel Light performance Content *********************/
 .firePerformance_Container,
 .pixellightPerformance_Container {

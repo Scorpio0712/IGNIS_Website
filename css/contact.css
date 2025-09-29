@@ -1,0 +1,55 @@
+@import url(style.css);
+
+/********************* Contact Container *********************/
+.contact_Form_Container {
+    width: 100%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    background-color:rgba(128,128,128,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.contact_Form{
+    color: var(--text-color);
+    font-size: large;
+    width: 100%;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.contact_FormButton {
+    font-size: large;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.contact_Info {
+    width: 100%;
+    padding: 24px;
+}
+
+.contact_InfoTopic {
+    color: var(--text-color);
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.facebook_InfoButton_Container, .gmail_InfoButton_Container, .whatapps_InfoButton_Container {
+    margin-bottom: 10px;
+}
+
+.facebook_InfoButton,
+.gmail_InfoButton, .whatapps_InfoButton {
+    font-size: large;
+    color: var(--text-color);
+    text-decoration: none; /* ลบเส้นขีดใต้ */
+}
+
+.facebook_InfoIcon,
+.gmail_InfoIcon,
+.whatapps_InfoIcon {
+    width: 40px;
+    height: 40px;
+}
