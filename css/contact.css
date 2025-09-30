@@ -37,14 +37,18 @@
 }
 
 .facebook_InfoButton_Container, .gmail_InfoButton_Container, .whatapps_InfoButton_Container {
-    margin-bottom: 10px;
+    margin-bottom: 1.5%;
 }
 
 .facebook_InfoButton,
 .gmail_InfoButton, .whatapps_InfoButton {
     font-size: large;
     color: var(--text-color);
-    text-decoration: none; /* ลบเส้นขีดใต้ */
+    text-decoration: none;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    transition: font-size 0.2s, color 0.2s;
 }
 
 .facebook_InfoIcon,
@@ -52,4 +56,18 @@
 .whatapps_InfoIcon {
     width: 40px;
     height: 40px;
+    transition: width 0.2s, height 0.2s;
+}
+
+.facebook_InfoButton:hover,
+.gmail_InfoButton:hover, .whatapps_InfoButton:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: x-large;
+}
+
+.facebook_InfoButton:hover .facebook_InfoIcon,
+.gmail_InfoButton:hover .gmail_InfoIcon, .whatapps_InfoButton:hover .whatapps_InfoIcon {
+    width: 45px;
+    height: 45px;
 }
