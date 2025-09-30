@@ -11,56 +11,8 @@
     <title>Fire Photos</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid nav-container">
-            <a class="navbar-brand" href="#">
-                <img src="images/cropped-image.png" alt="IGNIS_logo" width="60" height="50"
-                    class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="performance.html">Performance</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="images/Flag_of_the_United_Kingdom.png" alt="Thai Flag" width="20" height="20"
-                                class="rounded-circle d-inline-block align-text-top">
-                            English
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="images/Flag_of_the_United_Kingdom.png" alt="Thai Flag" width="20"
-                                        height="20" class="rounded-circle d-inline-block align-text-top"> English</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="images/Flag_of_Thailand.svg.png" alt="Thai Flag" width="20" height="20"
-                                        class="rounded-circle d-inline-block align-text-top"> Thai</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body data-page="fire_photos">
+    <nav class="navbar navbar-expand-lg " id="navbar_Container"></nav>
     <div class="body-container">
         <div class="firePic_Header">
             <div class="firePic_TopicPic">
@@ -68,60 +20,48 @@
             </div>
         </div>
         <div class="fireVideo_Container">
-            <video controls>
-                <source src="videos/Fire_Performance_Video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+
+            <iframe src="https://www.youtube.com/embed/GPbId73v0FY?modestbranding=1&rel=0" title="Fire Performance Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+                <a href="https://www.youtube.com/watch?v=GPbId73v0FY">Watch the video on YouTube</a></iframe>
+
         </div>
-        <div class="gallery_Container">
-            <div class="row gallery_Row1">
-                <div class="col gallery_Row1_Col1"><img src="images/fire_1.jpg" alt="Fire performance Image 1"></div>
-                <div class="col gallery_Row1_Col2"><img src="images/fire_10.JPG" alt="Fire performance Image 2"></div>
-                <div class="col gallery_Row1_Col3"><img src="images/fire_11.JPG" alt="Fire performance Image 3"></div>
+        <div class="gallery-container">
+            <div class="row g-3 mb-3">
+                <div class="col-md-4"><img src="images/fire_1.jpg" class="img-fluid" alt="Fire performance Image 1"></div>
+                <div class="col-md-4"><img src="images/fire_10.JPG" class="img-fluid" alt="Fire performance Image 2"></div>
+                <div class="col-md-4"><img src="images/fire_11.JPG" class="img-fluid" alt="Fire performance Image 3"></div>
             </div>
-            <div class="row gallery_Row2">
-                <div class="col gallery_Row2_Col1"><img src="images/fire_12.JPG" alt="Fire performance Image 4"></div>
-                <div class="col gallery_Row2_Col2"><img src="images/fire_2.jpg" alt="Fire performance Image 5"></div>
-                <div class="col gallery_Row2_Col3"><img src="images/fire_13.JPG" alt="Fire performance Image 6"></div>
+            <div class="row g-3 mb-3">
+                <div class="col-md-4"><img src="images/fire_12.JPG" class="img-fluid" alt="Fire performance Image 4"></div>
+                <div class="col-md-4"><img src="images/fire_2.jpg" class="img-fluid" alt="Fire performance Image 5"></div>
+                <div class="col-md-4"><img src="images/fire_13.JPG" class="img-fluid" alt="Fire performance Image 6"></div>
             </div>
-            <div class="row gallery_Row3">
-                <div class="col gallery_Row3_Col1"><img src="images/fire_14.JPG" alt="Fire performance Image 7"></div>
-                <div class="col gallery_Row3_Col2"><img src="images/fire_15.JPG" alt="Fire performance Image 8"></div>
-                <div class="col gallery_Row3_Col3"><img src="images/fire_8.JPG" alt="Fire performance Image 9"></div>
+            <div class="row g-3 mb-3">
+                <div class="col-md-4"><img src="images/fire_14.JPG" class="img-fluid" alt="Fire performance Image 7"></div>
+                <div class="col-md-4"><img src="images/fire_15.JPG" class="img-fluid" alt="Fire performance Image 8"></div>
+                <div class="col-md-4"><img src="images/fire_8.JPG" class="img-fluid" alt="Fire performance Image 9"></div>
             </div>
-            <div class="row gallery_Row4">
-                <div class="col gallery_Row4_Col1"><img src="images/fire_16.JPG" alt="Fire performance Image 10"></div>
-                <div class="col gallery_Row4_Col2"><img src="images/fire_7.JPG" alt="Fire performance Image 11"></div>
-                <div class="col gallery_Row4_Col3"><img src="images/fire_9.JPG" alt="Fire performance Image 12"></div>
+            <div class="row g-3 mb-3">
+                <div class="col-md-4"><img src="images/fire_16.JPG" class="img-fluid" alt="Fire performance Image 10"></div>
+                <div class="col-md-4"><img src="images/fire_7.JPG" class="img-fluid" alt="Fire performance Image 11"></div>
+                <div class="col-md-4"><img src="images/fire_9.JPG" class="img-fluid" alt="Fire performance Image 12"></div>
             </div>
-            <div class="row gallery_Row5">
-                <div class="col gallery_Row5_Col1"><img src="images/fire_4.JPG" alt="Fire performance Image 13"></div>
-                <div class="col gallery_Row5_Col2"><img src="images/fire_3.JPG" alt="Fire performance Image 14"></div>
-                <div class="col gallery_Row5_Col3"><img src="images/fire_17.JPG" alt="Fire performance Image 15"></div>
-            </div>
-        </div>
-        <div class="footer-Container">
-            <div class="footer-Icons">
-                <a href="#" class="facebook_Button">
-                    <img src="images/Facebook_Logo_Primary.png" class="facebook_Icon" alt="Facebook">
-                </a>
-                <a href="#" class="gmail_Button">
-                    <img src="images/Gmail_Icon.original.png" class="gmail_Icon" alt="Gmail">
-                </a>
-                <a href="#" class="whatapps_Button">
-                    <img src="images/Print_Glyph_Green.png" class="whatapps_Icon" alt="WhatsApp">
-                </a>
-            </div>
-            <div class="row align-item-start">
-                <p class="footer_text">© Copyright 2025, IGNIS Fire and Pixel Light performance. All rights reserved.
-                </p>
+            <div class="row g-3 mb-3">
+                <div class="col-md-4"><img src="images/fire_4.JPG" class="img-fluid" alt="Fire performance Image 13"></div>
+                <div class="col-md-4"><img src="images/fire_3.JPG" class="img-fluid" alt="Fire performance Image 14"></div>
+                <div class="col-md-4"><img src="images/fire_17.JPG" class="img-fluid" alt="Fire performance Image 15"></div>
             </div>
         </div>
+        <div class="footer-Container" id="footer_Container"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>

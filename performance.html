@@ -11,56 +11,8 @@
     <title>Performance</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid nav-container">
-            <a class="navbar-brand" href="#">
-                <img src="images/cropped-image.png" alt="IGNIS_logo" width="60" height="50"
-                    class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Performance</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="images/Flag_of_the_United_Kingdom.png" alt="Thai Flag" width="20" height="20"
-                                class="rounded-circle d-inline-block align-text-top">
-                            English
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="images/Flag_of_the_United_Kingdom.png" alt="Thai Flag" width="20"
-                                        height="20" class="rounded-circle d-inline-block align-text-top"> English</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="images/Flag_of_Thailand.svg.png" alt="Thai Flag" width="20" height="20"
-                                        class="rounded-circle d-inline-block align-text-top"> Thai</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body data-page="performance">
+    <nav class="navbar navbar-expand-lg " id="navbar_Container"></nav>
     <div class="body-container">
         <div class="performance_Header">
             <div class="performance_TopicPic">
@@ -134,27 +86,12 @@
                             class="btn btn-outline-primary btn-lg">See more photos</button></a></div>
             </div>
         </div>
-        <div class="footer-Container">
-            <div class="footer-Icons">
-                <a href="#" class="facebook_Button">
-                    <img src="images/Facebook_Logo_Primary.png" class="facebook_Icon" alt="Facebook">
-                </a>
-                <a href="#" class="gmail_Button">
-                    <img src="images/Gmail_Icon.original.png" class="gmail_Icon" alt="Gmail">
-                </a>
-                <a href="#" class="whatapps_Button">
-                    <img src="images/Print_Glyph_Green.png" class="whatapps_Icon" alt="WhatsApp">
-                </a>
-            </div>
-            <div class="row align-item-start">
-                <p class="footer_text">© Copyright 2025, IGNIS Fire and Pixel Light performance. All rights reserved.
-                </p>
-            </div>
-        </div>
+        <div class="footer-Container" id="footer_Container"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="javascript/main.js"></script>
 </body>
 
 </html>
