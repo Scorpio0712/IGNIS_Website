@@ -3,14 +3,14 @@
 /******************************** Header ********************************/
 .container-header {
     width: 100%;
-    margin-top: 10%;
+    margin: 10% 0 auto 0;
     position: relative;
 }
 
 .topic-pic {
     margin-top: 5%;
-    width: 100%;
-    max-height: 400px;
+    width: 90%;
+    height: 280px;
     object-fit: cover;
 }
 
@@ -43,6 +43,7 @@
 
 .container-storypara1 {
     font-size: 22px;
+    width: 90%;
     color: var(--text-color);
     line-height: 1.5;
     text-indent: 10%;
@@ -65,7 +66,7 @@
 
 .content-pic1,
 .content-pic2 {
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
 }
@@ -81,6 +82,7 @@
 .container-storypara2 {
     margin-top: 5%;
     font-size: 22px;
+    width: 90%;
     color: var(--text-color);
     line-height: 1.5;
     text-indent: 10%;
@@ -116,6 +118,7 @@
 .intro_FFQ {
     margin-top: 20px;
     font-size: 22px;
+    width: 90%;
     text-align: center;
     color: var(--text-color);
 }
@@ -147,7 +150,8 @@
 .story_Flexible,
 .story_Friendly,
 .story_Quality {
-    font-size: 20px;
+    font-size: 22px;
+    width: 85%;
     text-align: center;
     color: var(--text-color);
 }
@@ -155,6 +159,7 @@
 .outro_FFQ {
     margin-top: 5%;
     font-size: 22px;
+    width: 90%;
     text-align: center;
     color: var(--text-color);
 }
@@ -184,26 +189,31 @@
 }
 
 .firePic_2Type {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
 }
+
 .pixelLightPic_2Type {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
 }
+
 .topic_Fire_Container, .topic_PixelLight_Container {
     margin-top: 5%;
     font-size: 32px;
     text-align: center;
     color: var(--text-color);
 }
+
 .content_Fire_Container, .content_PixelLight_Container {
     margin-top: 5%;
     font-size: 22px;
     text-align: center;
     color: var(--text-color);
 }
+
 .content_Fire_Paragrahp, .content_PixelLight_Paragrahp {
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -224,17 +234,17 @@
     margin-top: 2%;
     display: flex; 
     overflow: hidden;
-    position: relative;
+    position:relative;
     width: 100%;
     height: 100%;
 }
 .customers_Pic_Slider {
     display: flex;
     width: calc(200%); /* 2 เท่าของ container */
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 20s linear infinite;
 }
 .customers_Pic {
-    width: 100%; /* Each image is 50% of the slider */
+    width: 100%; /* กว้างเท่ากับ container */
     height: 100%;
     object-fit: contain;
 }
@@ -243,6 +253,6 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Scroll by one image width */
+        transform: translateX(-100%); /* เลื่อนเท่ากับความกว้างของภาพเดียว */
     }
 }
