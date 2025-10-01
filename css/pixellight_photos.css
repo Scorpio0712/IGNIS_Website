@@ -26,11 +26,10 @@
     align-items: center;
     margin-top: 5%;
 }
-.pixellightVideo_Container video {
+.pixellightVideo_Container iframe {
     width: 840px;
-    height: 400px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 15px rgba(244, 146, 49, 0.4);
+    height: 480px;
+    border-radius: 20px;
 }
 /********************* Gallery *********************/
 .gallery-container {
@@ -47,5 +46,5 @@
     border-radius: 12px;
     box-shadow: 0px 0px 8px 5px rgba(244, 146, 49, 0.4);
     transition: transform 0.3s ease;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
