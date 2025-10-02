@@ -5,18 +5,21 @@
 .performance_Intro {
     width: 100%;
     margin-top: 10%;
-    padding: 0 10%;
+    padding: 0 7.5%;
     display: flex;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
 }
 
 .performance_IntroParagraph {
-    width: 80%;
-    font-size: 22px;
+    width: 100%;
+    font-size: 20px;
     color: var(--text-color);
     line-height: 1.5;
-    text-align: center;
+    text-align: justify;
+    text-indent: 15%;
+
 }
 
 /********************* Fire & Pixel Light performance Content *********************/
@@ -25,6 +28,7 @@
     width: 100%;
     margin-top: 10%;
     box-sizing: border-box;
+    padding: 0 7.5%;
 }
 
 .firePerformance_Topic,
@@ -37,12 +41,14 @@
 .firePerformance_TopicText,
 .pixellightPerformance_TopicText {
     position: relative;
-    font-size: 48px;
+    font-size: 26px;
     font-weight: bold;
-    color: var(--text-color, #fff);
-    padding: 0 32px;
+    color: var(--text-color);
+    padding: 0 5px;
     display: flex;
     align-items: center;
+    text-align: center;
+
 }
 
 .firePerformance_TopicText::before,
@@ -50,9 +56,9 @@
     content: "";
     display: block;
     height: 3px;
-    width: 450px;
-    background: linear-gradient(to right, transparent, #fff, transparent);
-    margin: 0 18px;
+    width: 125px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    margin: 0 2px;
     border-radius: 2px;
 }
 
@@ -61,31 +67,57 @@
     content: "";
     display: block;
     height: 3px;
-    width: 375px;
-    background: linear-gradient(to right, transparent, #fff, transparent);
-    margin: 0 18px;
-    border-radius: 2px;
+    width: 125px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    margin: 0 2px;
+    border-radius: 1px;
 }
 
 .firePerformance_TopicText::after,
 .pixellightPerformance_TopicText::after {
-    background: linear-gradient(to left, transparent, #fff, transparent);
+    background: linear-gradient(to left, transparent, var(--primary-color), transparent);
 }
 
 .firePerformance_Content,
 .pixellightPerformance_Content {
-    width: 100%;
-    margin-top: 2.5%;
+    margin-top: 10%;
 }
 
 .firePerformance_PicRow1,
 .firePerformance_PicRow2,
 .pixellightPerformance_PicRow1,
 .pixellightPerformance_PicRow2 {
+    width: 450vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
+    overflow: hidden;
+    position: relative;
+    animation: scroll-right 10s linear infinite;
+}
+
+.firePerformance_PicRow1 img,
+.firePerformance_PicRow2 img,
+.pixellightPerformance_PicRow1 img,
+.pixellightPerformance_PicRow2 img {
+    width: 70vw;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* .firePerformance_PicRow1 {
+    animation: scroll-right 10s linear infinite;
+    width: 200vw;
+} */
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-224vw);
+    }
 }
 
 .firePerformance_PicRow2,
@@ -93,22 +125,6 @@
     margin-top: 5%;
 }
 
-.firePerformance_Pic1,
-.firePerformance_Pic2,
-.firePerformance_Pic3,
-.firePerformance_Pic4,
-.firePerformance_Pic5,
-.firePerformance_Pic6,
-.pixellightPerformance_Pic1,
-.pixellightPerformance_Pic2,
-.pixellightPerformance_Pic3,
-.pixellightPerformance_Pic4,
-.pixellightPerformance_Pic5,
-.pixellightPerformance_Pic6 {
-    width: 380px;
-    height: 200px;
-    object-fit: cover;
-}
 
 .firePerformance_Paragraph,
 .pixellightPerformance_Paragraph {
@@ -122,28 +138,31 @@
 
 .firePerformance_ParagraphText,
 .pixellightPerformance_ParagraphText {
-    width: 70%;
-    font-size: 22px;
+    width: 100%;
+    font-size: 20px;
     color: var(--text-color);
     line-height: 1.5;
 }
 
-.firePerformance_Button, .pixellightPerformance_Button {
+.firePerformance_Button,
+.pixellightPerformance_Button {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.firePerformance_Button button, .pixellightPerformance_Button button {
+.firePerformance_Button button,
+.pixellightPerformance_Button button {
     font-size: 24px;
     border-color: var(--text-color);
     color: var(--text-color);
 }
 
-.firePerformance_Button button:hover, .pixellightPerformance_Button button:hover {
+.firePerformance_Button button:hover,
+.pixellightPerformance_Button button:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--secondary-color);
