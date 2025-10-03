@@ -1,188 +1,373 @@
 @import url('style.css');
 
-/********************* Performance Intro *********************/
+@media (min-width: 0px) and (max-width: 767px) {
 
-.performance_Intro {
-    width: 100%;
-    margin-top: 10%;
-    padding: 0 7.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
+    /********************* Performance Intro *********************/
+    .performance_Intro {
+        width: 100%;
+        margin-top: 10%;
+        padding: 0 7.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
 
-.performance_IntroParagraph {
-    width: 100%;
-    font-size: 20px;
-    color: var(--text-color);
-    line-height: 1.5;
-    text-align: justify;
-    text-indent: 15%;
+    .performance_IntroParagraph {
+        width: 100%;
+        font-size: 20px;
+        color: var(--text-color);
+        line-height: 1.5;
+        text-align: justify;
+        text-indent: 15%;
 
-}
+    }
 
-/********************* Fire & Pixel Light performance Content *********************/
-.firePerformance_Container,
-.pixellightPerformance_Container {
-    width: 100%;
-    margin-top: 20%;
-    box-sizing: border-box;
-    padding: 0 7.5%;
-}
+    /********************* Fire & Pixel Light performance Content *********************/
+    .firePerformance_Container,
+    .pixellightPerformance_Container {
+        width: 100%;
+        margin-top: 20%;
+        box-sizing: border-box;
+        padding: 0 7.5%;
+    }
 
-.firePerformance_Topic,
-.pixellightPerformance_Topic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+    .firePerformance_Topic,
+    .pixellightPerformance_Topic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.firePerformance_TopicText,
-.pixellightPerformance_TopicText {
-    position: relative;
-    font-size: 26px;
-    font-weight: bold;
-    color: var(--text-color);
-    padding: 0 5px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    }
 
-}
+    .firePerformance_TopicText,
+    .pixellightPerformance_TopicText {
+        position: relative;
+        font-size: 26px;
+        font-weight: bold;
+        color: var(--text-color);
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        text-align: center;
 
-.firePerformance_TopicText::before,
-.firePerformance_TopicText::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 125px;
-    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-    margin: 0 2px;
-    border-radius: 2px;
-}
+    }
 
-.pixellightPerformance_TopicText::before,
-.pixellightPerformance_TopicText::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 125px;
-    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-    margin: 0 2px;
-    border-radius: 1px;
-}
+    .firePerformance_TopicText::before,
+    .firePerformance_TopicText::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 125px;
+        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+        margin: 0 2px;
+        border-radius: 2px;
+    }
 
-.firePerformance_TopicText::after,
-.pixellightPerformance_TopicText::after {
-    background: linear-gradient(to left, transparent, var(--primary-color), transparent);
-}
+    .pixellightPerformance_TopicText::before,
+    .pixellightPerformance_TopicText::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 125px;
+        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+        margin: 0 2px;
+        border-radius: 1px;
+    }
 
-.firePerformance_Content,
-.pixellightPerformance_Content {
-    margin-top: 5%;
-    
-}
+    .firePerformance_TopicText::after,
+    .pixellightPerformance_TopicText::after {
+        background: linear-gradient(to left, transparent, var(--primary-color), transparent);
+    }
 
-.firePerformance_PicRow1,
-.pixellightPerformance_PicRow1 {
-    width: 450vw;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    animation: scroll-right 15s linear infinite;
-}
+    .firePerformance_Content,
+    .pixellightPerformance_Content {
+        margin-top: 5%;
 
-.firePerformance_PicRow2,
-.pixellightPerformance_PicRow2 {
-    width: 450vw;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    animation: scroll-left 15s linear infinite;
-}
+    }
 
-.firePerformance_PicRow1 img,
-.firePerformance_PicRow2 img,
-.pixellightPerformance_PicRow1 img,
-.pixellightPerformance_PicRow2 img {
-    width: 70vw;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 20px;
-    flex-shrink: 0;
-}
+    .firePerformance_PicRow1,
+    .pixellightPerformance_PicRow1 {
+        width: 450vw;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        animation: scroll-right 15s linear infinite;
+    }
 
-/* .firePerformance_PicRow1 {
+    .firePerformance_PicRow2,
+    .pixellightPerformance_PicRow2 {
+        width: 450vw;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        animation: scroll-left 15s linear infinite;
+    }
+
+    .firePerformance_PicRow1 img,
+    .firePerformance_PicRow2 img,
+    .pixellightPerformance_PicRow1 img,
+    .pixellightPerformance_PicRow2 img {
+        width: 70vw;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    /* .firePerformance_PicRow1 {
     animation: scroll-right 10s linear infinite;
     width: 200vw;
 } */
 
-@keyframes scroll-right {
-    0% {
-        transform: translateX(0);
+    @keyframes scroll-right {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-224vw);
+        }
     }
 
-    100% {
-        transform: translateX(-224vw);
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(-224vw);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .firePerformance_PicRow2,
+    .pixellightPerformance_PicRow2 {
+        margin-top: 5%;
+    }
+
+
+    .firePerformance_Paragraph,
+    .pixellightPerformance_Paragraph {
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firePerformance_ParagraphText,
+    .pixellightPerformance_ParagraphText {
+        width: 100%;
+        font-size: 20px;
+        color: var(--text-color);
+        line-height: 1.5;
+    }
+
+    .firePerformance_Button,
+    .pixellightPerformance_Button {
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firePerformance_Button button,
+    .pixellightPerformance_Button button {
+        font-size: 24px;
+        border-color: var(--text-color);
+        color: var(--text-color);
+    }
+
+    .firePerformance_Button button:hover,
+    .pixellightPerformance_Button button:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--secondary-color);
     }
 }
 
-@keyframes scroll-left {
-    0% {
-        transform: translateX(-224vw);
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /********************* Performance Intro *********************/
+    .performance_Intro {
+        width: 100%;
+        margin-top: 10%;
+        padding: 0 7.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
     }
 
-    100% {
-        transform: translateX(0);
+    .performance_IntroParagraph {
+        width: 100%;
+        font-size: 20px;
+        color: var(--text-color);
+        line-height: 1.5;
+        text-align: center;
+
+
     }
-}
 
-.firePerformance_PicRow2,
-.pixellightPerformance_PicRow2 {
-    margin-top: 5%;
-}
+    /********************* Fire & Pixel Light performance Content *********************/
+    .firePerformance_Container,
+    .pixellightPerformance_Container {
+        width: 100%;
+        margin-top: 10%;
+        box-sizing: border-box;
+        padding: 0 7.5%;
+    }
+
+    .firePerformance_Topic,
+    .pixellightPerformance_Topic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .firePerformance_TopicText,
+    .pixellightPerformance_TopicText {
+        position: relative;
+        font-weight: bold;
+        color: var(--text-color);
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .firePerformance_TopicText::before,
+    .firePerformance_TopicText::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 225px;
+        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+        margin: 0 2px;
+        border-radius: 2px;
+    }
+
+    .pixellightPerformance_TopicText::before,
+    .pixellightPerformance_TopicText::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 200px;
+        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+        margin: 0 2px;
+        border-radius: 2px;
+    }
+
+    .firePerformance_TopicText::after,
+    .pixellightPerformance_TopicText::after {
+        background: linear-gradient(to left, transparent, var(--primary-color), transparent);
+    }
+
+    .firePerformance_Content,
+    .pixellightPerformance_Content {
+        margin-top: 5%;
+
+    }
+
+    .firePerformance_PicRow1,
+    .pixellightPerformance_PicRow1 {
+        width: 450vw;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        animation: scroll-right 15s linear infinite;
+    }
+
+    .firePerformance_PicRow2,
+    .pixellightPerformance_PicRow2 {
+        width: 320vw;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        animation: scroll-left 15s linear infinite;
+    }
+
+    .firePerformance_PicRow1 img,
+    .firePerformance_PicRow2 img,
+    .pixellightPerformance_PicRow1 img,
+    .pixellightPerformance_PicRow2 img {
+        width: 50vw;
+        height: 180px;
+        object-fit: cover;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    @keyframes scroll-right {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-157.5vw);
+        }
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(-157.5vw);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .firePerformance_PicRow2,
+    .pixellightPerformance_PicRow2 {
+        margin-top: 5%;
+    }
 
 
-.firePerformance_Paragraph,
-.pixellightPerformance_Paragraph {
-    width: 100%;
-    margin-top: 5%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .firePerformance_Paragraph,
+    .pixellightPerformance_Paragraph {
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.firePerformance_ParagraphText,
-.pixellightPerformance_ParagraphText {
-    width: 100%;
-    font-size: 20px;
-    color: var(--text-color);
-    line-height: 1.5;
-}
+    .firePerformance_ParagraphText,
+    .pixellightPerformance_ParagraphText {
+        width: 100%;
+        font-size: 20px;
+        color: var(--text-color);
+        line-height: 1.5;
+    }
 
-.firePerformance_Button,
-.pixellightPerformance_Button {
-    width: 100%;
-    margin-top: 10%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .firePerformance_Button,
+    .pixellightPerformance_Button {
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.firePerformance_Button button,
-.pixellightPerformance_Button button {
-    font-size: 24px;
-    border-color: var(--text-color);
-    color: var(--text-color);
-}
+    .firePerformance_Button button,
+    .pixellightPerformance_Button button {
+        font-size: 24px;
+        border-color: var(--text-color);
+        color: var(--text-color);
+    }
 
-.firePerformance_Button button:hover,
-.pixellightPerformance_Button button:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--secondary-color);
+    .firePerformance_Button button:hover,
+    .pixellightPerformance_Button button:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
 }
