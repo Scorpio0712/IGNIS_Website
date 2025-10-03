@@ -1,4 +1,4 @@
-@import url(style.css);
+@import url('style.css');
 
 /************************Fire performance images Topic*****************************/
 .pixellightPic_TopicPic {
@@ -7,11 +7,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 32px 0;
+    
 }
 
 .pixellightPic_TopicText {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: bold;
     color: var(--text-color);
     line-height: 1.2;
@@ -24,27 +24,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 10%;
+    padding: 0 5%;
 }
 .pixellightVideo_Container iframe {
-    width: 840px;
-    height: 480px;
-    border-radius: 20px;
+   width: 480px;
+    height: 240px;
 }
 /********************* Gallery *********************/
 .gallery-container {
-    width: 100%;
-    margin-top: 10%;
+   width: 100%;
+    margin-top: 20%;
+    grid-template-columns: 1fr 1fr; /* มือถือ: 2 คอลัมน์ */
+    gap: 1.5rem;
+    display: grid;
     box-sizing: border-box;
-    padding: 0 2%;
+    padding: 0 5%;
 }
 
 .gallery-container img {
-    width: 90%;
-    height: 250px; /* You can adjust this height as needed */
+   width: 100%;
+    height: 175px; /* You can adjust this height as needed */
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0px 0px 8px 5px rgba(244, 146, 49, 0.4);
-    transition: transform 0.3s ease;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }

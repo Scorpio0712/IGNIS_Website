@@ -111,6 +111,10 @@ a {
     z-index: 2;
 }
 
+.contact_TopicText {
+    font-size: 50px;
+}
+
 /******************************** Footer ********************************/
 .footer-Container {
     margin-top: 20%;

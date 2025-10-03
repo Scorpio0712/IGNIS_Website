@@ -26,7 +26,7 @@
 .firePerformance_Container,
 .pixellightPerformance_Container {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 20%;
     box-sizing: border-box;
     padding: 0 7.5%;
 }
@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .firePerformance_TopicText,
@@ -80,18 +81,26 @@
 
 .firePerformance_Content,
 .pixellightPerformance_Content {
-    margin-top: 10%;
+    margin-top: 5%;
+    
 }
 
 .firePerformance_PicRow1,
+.pixellightPerformance_PicRow1 {
+    width: 450vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    animation: scroll-right 15s linear infinite;
+}
+
 .firePerformance_PicRow2,
-.pixellightPerformance_PicRow1,
 .pixellightPerformance_PicRow2 {
     width: 450vw;
     display: flex;
     overflow: hidden;
     position: relative;
-    animation: scroll-right 10s linear infinite;
+    animation: scroll-left 15s linear infinite;
 }
 
 .firePerformance_PicRow1 img,
@@ -117,6 +126,16 @@
 
     100% {
         transform: translateX(-224vw);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(-224vw);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
