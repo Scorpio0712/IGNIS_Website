@@ -1,69 +1,72 @@
 @import url('style.css');
 
-/********************* Contact Container *********************/
-.contact_Form_Container {
-    width: 90%;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(128, 128, 128, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0 5%;
-    border-radius: 12px;
-    padding: 24px 12px;
-}
+/************************ Mobile Responsive ************************/
+@media (min-width: 0px) and (max-width: 767px) {
 
-.contact_Form {
-    color: var(--text-color);
-    font-size: 18px;
-    width: 100%;
-    padding: 12px;
-}
+    /********************* Contact Container *********************/
+    .contact_Form_Container {
+        width: 90%;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(128, 128, 128, 0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0 5%;
+        border-radius: 12px;
+        padding: 24px 12px;
+    }
 
-.contact_FormButton {
-    font-size: large;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-}
+    .contact_Form {
+        color: var(--text-color);
+        font-size: 18px;
+        width: 100%;
+        padding: 12px;
+    }
 
-.contact_Info {
-    width: 100%;
-    padding: 24px;
-}
+    .contact_FormButton {
+        font-size: large;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+    }
 
-.contact_InfoTopic {
-    color: var(--text-color);
-    font-size: x-large;
-    margin-bottom: 20px;
-}
+    .contact_Info {
+        width: 100%;
+        padding: 24px;
+    }
 
-.facebook_InfoButton_Container,
-.gmail_InfoButton_Container,
-.whatapps_InfoButton_Container {
-    margin-bottom: 1.5%;
-}
+    .contact_InfoTopic {
+        color: var(--text-color);
+        font-size: x-large;
+        margin-bottom: 20px;
+    }
 
-.facebook_InfoButton,
-.gmail_InfoButton,
-.whatapps_InfoButton {
-    font-size: large;
-    color: var(--text-color);
-    text-decoration: none;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    /* transition: font-size 0.2s, color 0.2s; */
-}
+    .facebook_InfoButton_Container,
+    .gmail_InfoButton_Container,
+    .whatapps_InfoButton_Container {
+        margin-bottom: 1.5%;
+    }
 
-.facebook_InfoIcon,
-.gmail_InfoIcon,
-.whatapps_InfoIcon {
-    width: 40px;
-    height: 40px;
-    /* transition: width 0.2s, height 0.2s; */
-}
+    .facebook_InfoButton,
+    .gmail_InfoButton,
+    .whatapps_InfoButton {
+        font-size: large;
+        color: var(--text-color);
+        text-decoration: none;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        /* transition: font-size 0.2s, color 0.2s; */
+    }
 
-/* .facebook_InfoButton:hover,
+    .facebook_InfoIcon,
+    .gmail_InfoIcon,
+    .whatapps_InfoIcon {
+        width: 40px;
+        height: 40px;
+        /* transition: width 0.2s, height 0.2s; */
+    }
+
+    /* .facebook_InfoButton:hover,
 .gmail_InfoButton:hover,
 .whatapps_InfoButton:hover {
     cursor: pointer;
@@ -77,3 +80,87 @@
     width: 45px;
     height: 45px;
 } */
+}
+
+/************************ Tablet Responsive ************************/
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /********************* Contact Container *********************/
+    .contact_Form_Container {
+        width: 90%;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(128, 128, 128, 0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0 5%;
+        border-radius: 12px;
+        padding: 24px 12px;
+    }
+
+    .contact_Form {
+        color: var(--text-color);
+        font-size: 20px;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .contact_FormButton {
+        margin-top: 2%;
+        font-size: 20px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+    }
+
+    .contact_Info {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .contact_InfoTopic {
+        color: var(--text-color);
+        font-size: x-large;
+        margin-bottom: 20px;
+    }
+
+    .facebook_InfoButton_Container,
+    .gmail_InfoButton_Container,
+    .whatapps_InfoButton_Container {
+        margin-bottom: 1.5%;
+    }
+
+    .facebook_InfoButton,
+    .gmail_InfoButton,
+    .whatapps_InfoButton {
+        font-size: large;
+        color: var(--text-color);
+        text-decoration: none;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        /* transition: font-size 0.2s, color 0.2s; */
+    }
+
+    .facebook_InfoIcon,
+    .gmail_InfoIcon,
+    .whatapps_InfoIcon {
+        width: 40px;
+        height: 40px;
+        /* transition: width 0.2s, height 0.2s; */
+    }
+
+    /* .facebook_InfoButton:hover,
+.gmail_InfoButton:hover,
+.whatapps_InfoButton:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: x-large;
+}
+
+.facebook_InfoButton:hover .facebook_InfoIcon,
+.gmail_InfoButton:hover .gmail_InfoIcon,
+.whatapps_InfoButton:hover .whatapps_InfoIcon {
+    width: 45px;
+    height: 45px;
+} */
+}

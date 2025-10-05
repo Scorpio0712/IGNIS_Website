@@ -189,7 +189,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
     /********************* Performance Intro *********************/
     .performance_Intro {
@@ -204,19 +204,17 @@
 
     .performance_IntroParagraph {
         width: 100%;
-        font-size: 20px;
+        font-size: 26px;
         color: var(--text-color);
         line-height: 1.5;
         text-align: center;
-
-
     }
 
     /********************* Fire & Pixel Light performance Content *********************/
     .firePerformance_Container,
     .pixellightPerformance_Container {
         width: 100%;
-        margin-top: 10%;
+        margin-top: 15%;
         box-sizing: border-box;
         padding: 0 7.5%;
     }
@@ -226,7 +224,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .firePerformance_TopicText,
@@ -238,7 +235,6 @@
         display: flex;
         align-items: center;
         text-align: center;
-
     }
 
     .firePerformance_TopicText::before,
@@ -246,7 +242,7 @@
         content: "";
         display: block;
         height: 3px;
-        width: 225px;
+        width: 250px;
         background: linear-gradient(to right, transparent, var(--primary-color), transparent);
         margin: 0 2px;
         border-radius: 2px;
@@ -257,7 +253,7 @@
         content: "";
         display: block;
         height: 3px;
-        width: 200px;
+        width: 225px;
         background: linear-gradient(to right, transparent, var(--primary-color), transparent);
         margin: 0 2px;
         border-radius: 2px;
@@ -276,7 +272,7 @@
 
     .firePerformance_PicRow1,
     .pixellightPerformance_PicRow1 {
-        width: 450vw;
+        width: 320vw;
         display: flex;
         overflow: hidden;
         position: relative;
@@ -297,7 +293,7 @@
     .pixellightPerformance_PicRow1 img,
     .pixellightPerformance_PicRow2 img {
         width: 50vw;
-        height: 180px;
+        height: 225px;
         object-fit: cover;
         margin-right: 20px;
         flex-shrink: 0;
@@ -328,7 +324,6 @@
         margin-top: 5%;
     }
 
-
     .firePerformance_Paragraph,
     .pixellightPerformance_Paragraph {
         width: 100%;
@@ -342,7 +337,7 @@
     .firePerformance_ParagraphText,
     .pixellightPerformance_ParagraphText {
         width: 100%;
-        font-size: 20px;
+        font-size: 24px;
         color: var(--text-color);
         line-height: 1.5;
     }
@@ -359,7 +354,7 @@
 
     .firePerformance_Button button,
     .pixellightPerformance_Button button {
-        font-size: 24px;
+        font-size: 26px;
         border-color: var(--text-color);
         color: var(--text-color);
     }
