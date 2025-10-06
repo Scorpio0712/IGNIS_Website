@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.ok ? response.text() : Promise.reject('File not found'))
             .then(data => {
                 document.getElementById(targetElementId).innerHTML = data;
-                
+
                 // Special handling for navbar active state
                 if (targetElementId === 'navbar_Container') {
                     const pageName = document.body.dataset.page;
@@ -56,67 +56,43 @@ document.addEventListener("DOMContentLoaded", function () {
     loadComponent('components/navbar.html', 'navbar_Container');
     loadComponent('components/footer.html', 'footer_Container');
 
-    // Scroll hide/show navbar (after navbar loaded asynchronously)
-    let lastScrollY = 0;
-    const distanceThreshold = 6; // ระยะความต่างขั้นต่ำต่อครั้ง
-    const startHideAfter = 20; // เริ่มพิจารณาซ่อนหลังเลื่อนลงเกินค่านี้ (px)
-    let ticking = false;
+});
 
-    const handleScroll = () => {
-        const navbarRoot = document.getElementById('navbar_Container');
-        if (!navbarRoot) return;
-        // ถ้า container เองมี class .navbar ให้ใช้เลย ไม่งั้นมองหาภายใน
-        const navbar = navbarRoot.classList && navbarRoot.classList.contains('navbar')
-            ? navbarRoot
-            : navbarRoot.querySelector('.navbar');
-        if (!navbar) return; // ยังไม่โหลดเสร็จหรือ markup ยังไม่ตรง
+///////// Hamburger Menu Animation /////////
+function hamMenuFunction(x) {
+    x.classList.toggle("change");
 
-        const currentY = window.scrollY || window.pageYOffset;
-        const goingDown = currentY > lastScrollY;
-    const distance = Math.abs(currentY - lastScrollY);
+    let navMenu = document.getElementById("navMenu");
+    if(navMenu.className === "menu") {
+        navMenu.className += " menu-active";
+    } else {
+        navMenu.className = "menu";
+    }
+}
 
-        // เพิ่ม/ลบเงาเมื่อ scroll เกิน 4px
-        if (currentY > 4) {
-            navbar.classList.add('navbar--scrolled');
-        } else {
-            navbar.classList.remove('navbar--scrolled');
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const navMenu = document.getElementById("navMenu");
+    const hamMenu = document.querySelector(".ham-menu");
+    
+    if (navMenu && hamMenu && navMenu.classList.contains("menu-active")) {
+        // Check if click is outside menu and hamburger button
+        if (!navMenu.contains(event.target) && !hamMenu.contains(event.target)) {
+            navMenu.className = "menu";
+            hamMenu.classList.remove("change");
         }
+    }
+});
 
-        // ไม่ซ่อนถ้าเมนู mobile เปิดอยู่
-        const collapseEl = navbar.querySelector('.navbar-collapse');
-        const menuOpen = collapseEl && collapseEl.classList.contains('show');
-
-        if (!menuOpen) {
-            if (goingDown && currentY > startHideAfter && distance > distanceThreshold) {
-                navbar.classList.add('navbar--hidden');
-                lastScrollY = currentY;
-            } else if (!goingDown && distance > 4) {
-                navbar.classList.remove('navbar--hidden');
-                lastScrollY = currentY;
-            }
-        } else {
-            // เมนูเปิดอยู่ บังคับโชว์
-            navbar.classList.remove('navbar--hidden');
-            lastScrollY = currentY;
+// Close menu when clicking on menu links
+document.addEventListener('click', function(event) {
+    const navMenu = document.getElementById("navMenu");
+    const hamMenu = document.querySelector(".ham-menu");
+    
+    if (event.target.tagName === 'A' && event.target.closest('.menu')) {
+        if (navMenu && hamMenu) {
+            navMenu.className = "menu";
+            hamMenu.classList.remove("change");
         }
-        ticking = false;
-    };
-
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            window.requestAnimationFrame(handleScroll);
-            ticking = true;
-        }
-    }, { passive: true });
-
-    // Observe when navbar gets injected then add helper class to body (optional future use)
-    const navbarContainer = document.getElementById('navbar_Container');
-    const observer = new MutationObserver(() => {
-        const nav = navbarContainer.querySelector('.navbar');
-        if (nav) {
-            document.body.classList.add('has-fixed-navbar');
-            observer.disconnect();
-        }
-    });
-    observer.observe(navbarContainer, { childList: true, subtree: true });
+    }
 });
