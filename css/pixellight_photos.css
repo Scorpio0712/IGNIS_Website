@@ -1,67 +1,49 @@
 @import url('style.css');
 
-/************************ Mobile Responsive ************************/
-@media (min-width: 0px) and (max-width: 767px) {
+/************************Fire performance images Topic*****************************/
+.pixellightpic-Topic span {
+    word-break: break-word;
+}
 
-    /************************Fire performance images Topic*****************************/
-    .pixellightPic_TopicPic {
-        width: 100%;
-        min-height: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+/******************* Fire performance Video *******************/
+.pixellightvideo-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 0 1.5rem;
+}
 
-    }
+.pixellightvideo-Container iframe {
+    width: 480px;
+    height: 215px;
+}
 
-    .pixellightPic_TopicText {
-        font-size: 40px;
-        font-weight: bold;
-        color: var(--text-color);
-        line-height: 1.2;
-        word-break: break-word;
-    }
+/********************* Gallery *********************/
+.gallery-Grid {
+    width: 100%;
+    margin-top: 20%;
+    box-sizing: border-box;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
 
-    /******************* Fire performance Video *******************/
-    .pixellightVideo_Container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
-        padding: 0 5%;
-    }
+.gallery-Grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 5px rgba(244, 146, 49, 0.4);
+    transition: transform .3s ease;
+}
 
-    .pixellightVideo_Container iframe {
-        width: 100%;
-        max-width: 480px;
-        height: 240px;
-    }
-
-    /********************* Gallery *********************/
-    .gallery-grid {
-        width: 100%;
-        margin-top: 20%;
-        box-sizing: border-box;
-        padding: 0 5%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.2rem;
-    }
-
-    .gallery-grid img {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 0 8px 5px rgba(244, 146, 49, 0.4);
-        transition: transform .3s ease;
-    }
-
-    .gallery-grid img:last-child:nth-child(odd) {
-        grid-column: 1 / span 2;
-        max-width: 70%;
-        justify-self: center;
-    }
+.gallery-Grid img:last-child:nth-child(odd) {
+    grid-column: 1 / span 2;
+    max-width: 70%;
+    justify-self: center;
 }
 
 /************************ Tablet ************************/

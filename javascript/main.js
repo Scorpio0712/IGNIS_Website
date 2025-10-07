@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById(targetElementId).innerHTML = data;
 
                 // Special handling for navbar active state
-                if (targetElementId === 'navbar_Container') {
+                if (targetElementId === 'navbar-Container') {
                     const pageName = document.body.dataset.page;
                     if (pageName) {
                         const navLink = document.querySelector(`.nav-link[data-page='${pageName}']`);
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                     // Close navbar collapse when clicking outside (mobile hamburger)
                     try {
-                        const navbarRoot = document.getElementById('navbar_Container');
+                        const navbarRoot = document.getElementById('navbar-Container');
                         const collapseEl = navbarRoot && navbarRoot.querySelector('#navbarSupportedContent');
                         const togglerEl = navbarRoot && navbarRoot.querySelector('.navbar-toggler');
 
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .catch(error => console.error(`Error loading ${componentPath}:`, error));
     };
-    loadComponent('components/navbar.html', 'navbar_Container');
-    loadComponent('components/footer.html', 'footer_Container');
+    loadComponent('components/navbar.html', 'navbar-Container');
+    loadComponent('components/footer.html', 'footer-Container');
 
 });
 

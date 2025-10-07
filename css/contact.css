@@ -1,72 +1,106 @@
 @import url('style.css');
 
-/************************ Mobile Responsive ************************/
-@media (min-width: 0px) and (max-width: 767px) {
+/********************* Contact Container *********************/
+.contact-Form-Container {
+    padding: 0 1.5rem;
+    margin-top: 10%;
+}
 
-    /********************* Contact Container *********************/
-    .contact_Form_Container {
-        width: 90%;
-        margin-top: 10%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgba(128, 128, 128, 0.2);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 0 5%;
-        border-radius: 12px;
-        padding: 24px 12px;
-    }
+.contact-Form {
+    background-color: rgba(128, 128, 128, 0.2);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: var(--text-color);
+    width: 100%;
+    padding: 0.5rem 1rem 1.5rem;
 
-    .contact_Form {
-        color: var(--text-color);
-        font-size: 18px;
-        width: 100%;
-        padding: 12px;
-    }
+}
 
-    .contact_FormButton {
-        font-size: large;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-    }
+input:not([type="radio"]), textarea{
+    width: 100%;          /* ความกว้าง */
+}
 
-    .contact_Info {
-        width: 100%;
-        padding: 24px;
-    }
+input:not([type="radio"]) {
+    height: 35px;          /* ความสูง */
+}
 
-    .contact_InfoTopic {
-        color: var(--text-color);
-        font-size: x-large;
-        margin-bottom: 20px;
-    }
+.name-Form,
+.email-Form,
+.description-Form,
+.phone-Form,
+.selectshow-Form {
+    padding: 0.5rem 0;
+}
 
-    .facebook_InfoButton_Container,
-    .gmail_InfoButton_Container,
-    .whatapps_InfoButton_Container {
-        margin-bottom: 1.5%;
-    }
+.name-Form label,
+.email-Form label,
+.description-Form label,
+.phone-Form label,
+.selectshow-Form label {
+    font-size: 18px;
+    color: var(--text-color);
+}
 
-    .facebook_InfoButton,
-    .gmail_InfoButton,
-    .whatapps_InfoButton {
-        font-size: large;
-        color: var(--text-color);
-        text-decoration: none;
-        gap: 10px;
-        display: flex;
-        align-items: center;
-        /* transition: font-size 0.2s, color 0.2s; */
-    }
+.selectshow-Form .selectshow-Selection select {
+    width: 75%;
+    height: 35px;
+    font-size: 15px;
+}
 
-    .facebook_InfoIcon,
-    .gmail_InfoIcon,
-    .whatapps_InfoIcon {
-        width: 40px;
-        height: 40px;
-        /* transition: width 0.2s, height 0.2s; */
-    }
+.selectshow-Form .selectshow-Radio{
+    display: none;
+}
 
-    /* .facebook_InfoButton:hover,
+
+.submit-Form button {
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    margin-top: 2.5%;
+    font-size: 20px;
+    background: none;
+    color: var(--text-color);
+}
+
+.contact_Info {
+    width: 100%;
+    padding: 24px;
+}
+
+.contact_InfoTopic {
+    color: var(--text-color);
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.facebook_InfoButton_Container,
+.gmail_InfoButton_Container,
+.whatapps_InfoButton_Container {
+    margin-bottom: 1.5%;
+}
+
+.facebook_InfoButton,
+.gmail_InfoButton,
+.whatapps_InfoButton {
+    font-size: large;
+    color: var(--text-color);
+    text-decoration: none;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    /* transition: font-size 0.2s, color 0.2s; */
+}
+
+.facebook_InfoIcon,
+.gmail_InfoIcon,
+.whatapps_InfoIcon {
+    width: 40px;
+    height: 40px;
+    /* transition: width 0.2s, height 0.2s; */
+}
+
+/* .facebook_InfoButton:hover,
 .gmail_InfoButton:hover,
 .whatapps_InfoButton:hover {
     cursor: pointer;
@@ -80,7 +114,6 @@
     width: 45px;
     height: 45px;
 } */
-}
 
 /************************ Tablet Responsive ************************/
 @media (min-width: 768px) and (max-width: 1199px) {

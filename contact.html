@@ -11,83 +11,61 @@
 </head>
 
 <body data-page="contact">
-    <nav class="navbar navbar-expand-lg " id="navbar_Container"></nav>
-    <div class="body-container">
-        <div class="contact_Header">
-            <div class="contact_TopicPic">
-                <span class="contact_TopicText">C O N T A C T</span>
+    <nav id="navbar-Container"></nav>
+    <main>
+        <div class="container">
+            <div class="contact-Topic">
+                <span>C O N T A C T</span>
             </div>
         </div>
-        <div class="contact_Form_Container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="contact_Form" id="contactFormContainer">
-                        <form id="contactForm">
-                            <div class="mb-3">
-                                <label for="inputName" class="form-label">Name (Hotel, Organization, or Person):</label>
-                                <input type="text" class="form-control" id="inputName" name="Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputEmail" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="inputEmail" name="Email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputPhone" class="form-label">Phone: </label>
-                                <input type="tel" class="form-control" id="inputPhone" name="Phone">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputDetail" class="form-label">Descrpition:</label>
-                                <textarea class="form-control" id="inputDetail" rows="3" name="Descrpition"></textarea>
-                            </div>
-                            <div class="show_FormCheck">
-                                <p>Select show:</p>
-                                <div class="mb-3 form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1" name="ShowType">
-                                    <label class="form-check-label" for="inlineRadio1">Fire performance</label>
-                                </div>
-                                <div class="mb-3 form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2" name="ShowType">
-                                    <label class="form-check-label" for="inlineRadio2">Pixel Light perfroamce</label>
-                                </div>
-                                <div class="mb-3 form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio3" value="option3" name="ShowType">
-                                    <label class="form-check-label" for="inlineRadio3">Fire & Pixel Light</label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn contact_FormButton">Send message</button>
-                        </form>
+        <div class="container">
+            <div class="contact-Form-Container">
+                <form class="contact-Form" action="">
+                    <div class="name-Form">
+                        <label for="name">Name (Organization, Hotel, or Person):</label><br>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="contact_Info">
-                        <h3 class="contact_InfoTopic">Chat with us via</h3>
-                        <div class="col facebook_InfoButton_Container">
-                            <a href="#" class="facebook_InfoButton">
-                                <img src="images/Facebook_Logo_Primary.png" class="facebook_InfoIcon" alt="Facebook">
-                                Facebook
-                            </a>
+                    <div class="email-Form">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="phone-Form">
+                        <label for="number">Phone number:</label><br>
+                        <input type="tel" id="number" name="phone">
+                    </div>
+                    <div class="description-Form">
+                        <label for="message">Description:</label><br>
+                        <textarea id="message" name="message" rows="6" required>
+                        </textarea>
+                    </div>
+                    <div class="selectshow-Form">
+                        <label for="show">Select show type:</label><br>
+                        <div class="selectshow-Selection">
+                            <select class="select-Form" name="show" id="show" required>
+                                <option value="" disabled selected>-- Select show --</option>
+                                <option value="Fire performance">Fire performance</option>
+                                <option value="Pixellight performance">Pixel Light performance</option>
+                                <option value="FirePixellight performance">Fire & Pixel Light performance</option>
+                            </select><br>
                         </div>
-                        <div class="col gmail_InfoButton_Container">
-                            <a href="#" class="gmail_InfoButton">
-                                <img src="images/Gmail_Icon.original.png" class="gmail_InfoIcon" alt="Gmail"> Email
-                            </a>
-                        </div>
-                        <div class="col whatapps_InfoButton_Container">
-                            <a href="#" class="whatapps_InfoButton">
-                                <img src="images/Print_Glyph_Green.png" class="whatapps_InfoIcon" alt="WhatsApp">
-                                WhatsApp
-                            </a>
+                        <div class="selectshow-Radio">
+                            <input type="radio" id="pixel" name="show" value="pixel" required>
+                            <label for="pixel">Pixel Light Performance</label><br>
+                            <input type="radio" id="fire" name="show" value="fire" required>
+                            <label for="fire">Fire Performance</label><br>
+                            <input type="radio" id="both" name="show" value="both" required>
+                            <label for="both">Both</label><br>
                         </div>
                     </div>
-                </div>
+                    <div class="submit-Form">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="footer-Container" id="footer_Container"></div>
-    </div>
-        <script src="javascript/main.js"></script>
+        <footer id="footer-Container"></footer>
+    </main>
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>

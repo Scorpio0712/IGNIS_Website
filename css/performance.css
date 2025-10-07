@@ -1,193 +1,173 @@
 @import url('style.css');
 
-@media (min-width: 0px) and (max-width: 767px) {
+/********************* Performance Intro *********************/
+.performance-Intro {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+}
 
-    /********************* Performance Intro *********************/
-    .performance_Intro {
-        width: 100%;
-        margin-top: 10%;
-        padding: 0 7.5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-    }
+.performance-Intro p {
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 15%;
 
-    .performance_IntroParagraph {
-        width: 100%;
-        font-size: 20px;
-        color: var(--text-color);
-        line-height: 1.5;
-        text-align: justify;
-        text-indent: 15%;
+}
 
-    }
+/********************* Fire & Pixel Light performance Content *********************/
+.fireperformance-Container,
+.pixellightperformance-Container {
+    width: 100%;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+}
 
-    /********************* Fire & Pixel Light performance Content *********************/
-    .firePerformance_Container,
-    .pixellightPerformance_Container {
-        width: 100%;
-        margin-top: 20%;
-        box-sizing: border-box;
-        padding: 0 7.5%;
-    }
+.fireperformance-Topic h2,
+.pixellightperformance-Topic h2 {
+    position: relative;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
 
-    .firePerformance_Topic,
-    .pixellightPerformance_Topic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
 
-    }
+.fireperformance-Topic h2::before,
+.fireperformance-Topic h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 125px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    border-radius: 2px;
+}
 
-    .firePerformance_TopicText,
-    .pixellightPerformance_TopicText {
-        position: relative;
-        font-size: 26px;
-        font-weight: bold;
-        color: var(--text-color);
-        padding: 0 5px;
-        display: flex;
-        align-items: center;
-        text-align: center;
+.pixellightperformance-Topic h2::before,
+.pixellightperformance-Topic h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 125px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    margin: 0 2px;
+    border-radius: 1px;
+}
 
-    }
+.fireperformance-Topic h2::after,
+.pixellighterformance-Topic h2:after {
+    background: linear-gradient(to left, transparent, var(--primary-color), transparent);
+}
 
-    .firePerformance_TopicText::before,
-    .firePerformance_TopicText::after {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 125px;
-        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-        margin: 0 2px;
-        border-radius: 2px;
-    }
+.fireperformance-Content,
+.pixellightperformance-Content {
+    margin-top: 5%;
 
-    .pixellightPerformance_TopicText::before,
-    .pixellightPerformance_TopicText::after {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 125px;
-        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-        margin: 0 2px;
-        border-radius: 1px;
-    }
+}
 
-    .firePerformance_TopicText::after,
-    .pixellightPerformance_TopicText::after {
-        background: linear-gradient(to left, transparent, var(--primary-color), transparent);
-    }
+.fireperformance-PicRowOne,
+.pixellightperformance-PicRowOne {
+    width: 450vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    animation: scroll-right 15s linear infinite;
 
-    .firePerformance_Content,
-    .pixellightPerformance_Content {
-        margin-top: 5%;
+}
 
-    }
+.firePerformance-PicRowTwo,
+.pixellightperformance-PicRowTwo {
+    width: 450vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    animation: scroll-left 15s linear infinite;
 
-    .firePerformance_PicRow1,
-    .pixellightPerformance_PicRow1 {
-        width: 450vw;
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        animation: scroll-right 15s linear infinite;
-    }
+}
 
-    .firePerformance_PicRow2,
-    .pixellightPerformance_PicRow2 {
-        width: 450vw;
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        animation: scroll-left 15s linear infinite;
-    }
+.fireperformance-PicRowOne img,
+.firePerformance-PicRowTwo img,
+.pixellightperformance-PicRowOne img,
+.pixellightperformance-PicRowTwo img {
+    width: 70vw;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
 
-    .firePerformance_PicRow1 img,
-    .firePerformance_PicRow2 img,
-    .pixellightPerformance_PicRow1 img,
-    .pixellightPerformance_PicRow2 img {
-        width: 70vw;
-        height: 150px;
-        object-fit: cover;
-        margin-right: 20px;
-        flex-shrink: 0;
-    }
-
-    /* .firePerformance_PicRow1 {
+/* .firePerformance_PicRow1 {
     animation: scroll-right 10s linear infinite;
     width: 200vw;
 } */
 
-    @keyframes scroll-right {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-224vw);
-        }
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0);
     }
 
-    @keyframes scroll-left {
-        0% {
-            transform: translateX(-224vw);
-        }
-
-        100% {
-            transform: translateX(0);
-        }
-    }
-
-    .firePerformance_PicRow2,
-    .pixellightPerformance_PicRow2 {
-        margin-top: 5%;
-    }
-
-
-    .firePerformance_Paragraph,
-    .pixellightPerformance_Paragraph {
-        width: 100%;
-        margin-top: 5%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .firePerformance_ParagraphText,
-    .pixellightPerformance_ParagraphText {
-        width: 100%;
-        font-size: 20px;
-        color: var(--text-color);
-        line-height: 1.5;
-    }
-
-    .firePerformance_Button,
-    .pixellightPerformance_Button {
-        width: 100%;
-        margin-top: 10%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .firePerformance_Button button,
-    .pixellightPerformance_Button button {
-        font-size: 24px;
-        border-color: var(--text-color);
-        color: var(--text-color);
-    }
-
-    .firePerformance_Button button:hover,
-    .pixellightPerformance_Button button:hover {
-        background-color: var(--primary-color);
-        border-color: var(--primary-color);
-        color: var(--secondary-color);
+    100% {
+        transform: translateX(-224vw);
     }
 }
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(-224vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.firePerformance-PicRowTwo,
+.pixellightperformance-PicRowTwo {
+    margin-top: 5%;
+}
+
+.fireperformance-Paragraph,
+.pixellightperformance-Paragraph {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.fireperformance-Paragraph p,
+.pixellightperformance-Paragraph p {
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.fireperformance-Button,
+.pixellightperformance-Button {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fireperformance-Button a,
+.pixellightperformance-Button a {
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* .fireperformance-Button button:hover,
+.pixellightPerformance_Button button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+} */
 
 @media (min-width: 768px) and (max-width: 1199px) {
 
