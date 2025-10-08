@@ -13,7 +13,6 @@
     line-height: 1.5;
     text-align: justify;
     text-indent: 15%;
-
 }
 
 /********************* Fire & Pixel Light performance Content *********************/
@@ -33,6 +32,7 @@
     color: var(--text-color);
     padding: 0 0.5rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
 
@@ -42,20 +42,19 @@
 .fireperformance-Topic h2::after {
     content: "";
     display: block;
-    height: 3px;
+    height: 2px;
     width: 125px;
     background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 .pixellightperformance-Topic h2::before,
 .pixellightperformance-Topic h2::after {
     content: "";
     display: block;
-    height: 3px;
+    height: 2px;
     width: 125px;
     background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-    margin: 0 2px;
     border-radius: 1px;
 }
 
@@ -162,187 +161,103 @@
     text-decoration: none;
 }
 
-/* .fireperformance-Button button:hover,
-.pixellightPerformance_Button button:hover {
+/*.fireperformance-Button button:hover,
+    .pixellightPerformance_Button button:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--secondary-color);
-} */
+    } */
 
-@media (min-width: 768px) and (max-width: 1199px) {
+/*********************** Tablets ***********************/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
     /********************* Performance Intro *********************/
-    .performance_Intro {
-        width: 100%;
-        margin-top: 10%;
-        padding: 0 7.5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-    }
-
-    .performance_IntroParagraph {
-        width: 100%;
-        font-size: 26px;
-        color: var(--text-color);
-        line-height: 1.5;
-        text-align: center;
+    .performance-Intro p {
+        font-size: 24px;
     }
 
     /********************* Fire & Pixel Light performance Content *********************/
-    .firePerformance_Container,
-    .pixellightPerformance_Container {
-        width: 100%;
-        margin-top: 15%;
-        box-sizing: border-box;
-        padding: 0 7.5%;
+    .fireperformance-Container,
+    .pixellightperformance-Container {
+        margin-top: 10%;
     }
 
-    .firePerformance_Topic,
-    .pixellightPerformance_Topic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .fireperformance-Topic h2,
+    .pixellightperformance-Topic h2 {
+        font-size: 32px;
     }
 
-    .firePerformance_TopicText,
-    .pixellightPerformance_TopicText {
-        position: relative;
-        font-weight: bold;
-        color: var(--text-color);
-        padding: 0 5px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    .firePerformance_TopicText::before,
-    .firePerformance_TopicText::after {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 250px;
-        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-        margin: 0 2px;
-        border-radius: 2px;
-    }
-
-    .pixellightPerformance_TopicText::before,
-    .pixellightPerformance_TopicText::after {
-        content: "";
-        display: block;
-        height: 3px;
+    .fireperformance-Topic h2::before,
+    .fireperformance-Topic h2::after {
         width: 225px;
-        background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-        margin: 0 2px;
         border-radius: 2px;
     }
 
-    .firePerformance_TopicText::after,
-    .pixellightPerformance_TopicText::after {
-        background: linear-gradient(to left, transparent, var(--primary-color), transparent);
+    .pixellightperformance-Topic h2::before,
+    .pixellightperformance-Topic h2::after {
+        width: 325px;
+        border-radius: 2px;
     }
 
-    .firePerformance_Content,
-    .pixellightPerformance_Content {
-        margin-top: 5%;
-
-    }
-
-    .firePerformance_PicRow1,
-    .pixellightPerformance_PicRow1 {
+    .fireperformance-PicRowOne,
+    .pixellightperformance-PicRowOne {
         width: 320vw;
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        animation: scroll-right 15s linear infinite;
     }
 
-    .firePerformance_PicRow2,
-    .pixellightPerformance_PicRow2 {
+    .firePerformance-PicRowTwo,
+    .pixellightperformance-PicRowTwo {
         width: 320vw;
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        animation: scroll-left 15s linear infinite;
     }
 
-    .firePerformance_PicRow1 img,
-    .firePerformance_PicRow2 img,
-    .pixellightPerformance_PicRow1 img,
-    .pixellightPerformance_PicRow2 img {
+    .fireperformance-PicRowOne img,
+    .firePerformance-PicRowTwo img,
+    .pixellightperformance-PicRowOne img,
+    .pixellightperformance-PicRowTwo img {
         width: 50vw;
-        height: 225px;
-        object-fit: cover;
-        margin-right: 20px;
-        flex-shrink: 0;
+        height: 200px;
     }
+
+    /* .firePerformance_PicRow1 {
+    animation: scroll-right 10s linear infinite;
+    width: 200vw;
+    } */
 
     @keyframes scroll-right {
         0% {
             transform: translateX(0);
         }
-
         100% {
-            transform: translateX(-157.5vw);
+            transform: translateX(-158vw);
         }
     }
 
     @keyframes scroll-left {
         0% {
-            transform: translateX(-157.5vw);
+            transform: translateX(-158vw);
         }
-
         100% {
             transform: translateX(0);
         }
     }
 
-    .firePerformance_PicRow2,
-    .pixellightPerformance_PicRow2 {
-        margin-top: 5%;
-    }
-
-    .firePerformance_Paragraph,
-    .pixellightPerformance_Paragraph {
-        width: 100%;
-        margin-top: 5%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .firePerformance_ParagraphText,
-    .pixellightPerformance_ParagraphText {
-        width: 100%;
+    .fireperformance-Paragraph p,
+    .pixellightperformance-Paragraph p {
         font-size: 24px;
-        color: var(--text-color);
-        line-height: 1.5;
     }
 
-    .firePerformance_Button,
-    .pixellightPerformance_Button {
-        width: 100%;
-        margin-top: 10%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .fireperformance-Button,
+    .pixellightperformance-Button {
+        margin-top: 7.5%;
     }
 
-    .firePerformance_Button button,
-    .pixellightPerformance_Button button {
-        font-size: 26px;
-        border-color: var(--text-color);
-        color: var(--text-color);
-    }
-
-    .firePerformance_Button button:hover,
-    .pixellightPerformance_Button button:hover {
-        background-color: var(--primary-color);
-        border-color: var(--primary-color);
-        color: var(--secondary-color);
+    .fireperformance-Button a,
+    .pixellightperformance-Button a {
+        font-size: 24px;
     }
 }
+
+/*********************** Small desktops/laptops ***********************/
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+
+/*********************** Large desktops ***********************/
+@media only screen and (min-width: 1280px) {}

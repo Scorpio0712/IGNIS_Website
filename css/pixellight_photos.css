@@ -1,11 +1,8 @@
 @import url('style.css');
 
-/************************Fire performance images Topic*****************************/
-.pixellightpic-Topic span {
-    word-break: break-word;
-}
+/************************ Pixel Light performance images Topic*****************************/
 
-/******************* Fire performance Video *******************/
+/******************* Pixel Light performance Video *******************/
 .pixellightvideo-Container {
     width: 100%;
     display: flex;
@@ -47,115 +44,44 @@
 }
 
 /************************ Tablet ************************/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-    /************************Fire performance images Topic*****************************/
-    .pixellightPic_TopicPic {
-        width: 100%;
-        min-height: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    /************************Pixel Light performance images Topic*****************************/
 
+    /******************* Pixel Light performance Video *******************/
+    .pixellightvideo-Container {
+        padding: 0 2rem;
     }
 
-    .pixellightPic_TopicText {
-        font-size: 40px;
-        font-weight: bold;
-        color: var(--text-color);
-        line-height: 1.2;
-        word-break: break-word;
-    }
-
-    /******************* Fire performance Video *******************/
-    .pixellightVideo_Container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
-        padding: 0 5%;
-    }
-
-    .pixellightVideo_Container iframe {
-        width: 100%;
-        max-width: 640px;
+    .pixellightvideo-Container iframe {
+        width: 640px;
         height: 360px;
     }
 
 
     /********************* Gallery *********************/
-    .gallery-grid {
-        width: 100%;
-        margin-top: 20%;
-        box-sizing: border-box;
-        padding: 0 8%;
-        display: grid;
+    .gallery-Grid {
+        margin-top: 10%;
+        padding: 0 2.5rem;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
 
-    .gallery-grid img {
+    .gallery-Grid img {
         width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 0 8px 5px rgba(244, 146, 49, 0.4);
-        transition: transform .3s ease;
+        border-radius: 15px;
+    }
+
+    .gallery-Grid img:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: 100%;
+        justify-self: auto;
     }
 
 }
 
-/************************ Desktop Responsive ************************/
-@media (min-width: 1200px) {
+/*********************** Small desktops/laptops ***********************/
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
 
-    .pixellightPic_TopicPic {
-        width: 100%;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pixellightPic_TopicText {
-        font-size: 50px;
-        font-weight: bold;
-        color: var(--text-color);
-        line-height: 1.2;
-        word-break: break-word;
-    }
-
-    .pixellightVideo_Container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
-        padding: 0 15%;
-    }
-
-    .pixellightVideo_Container iframe {
-        width: 100%;
-        max-width: 800px;
-        height: 450px;
-    }
-
-    .gallery-grid {
-        width: 100%;
-        margin-top: 20%;
-        box-sizing: border-box;
-        padding: 0 12%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-
-    .gallery-grid img {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 0 10px 6px rgba(244, 146, 49, 0.35);
-        transition: transform .35s ease, box-shadow .35s ease;
-    }
-}
+/*********************** Large desktops ***********************/
+@media only screen and (min-width: 1280px) {}

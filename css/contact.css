@@ -2,26 +2,25 @@
 
 /********************* Contact Container *********************/
 .contact-Form-Container {
-    padding: 0 1.5rem;
-    margin-top: 10%;
-}
-
-.contact-Form {
+    padding: 0.5rem 1rem 1.5rem;
+    margin: 10% auto 0 auto;
     background-color: rgba(128, 128, 128, 0.2);
     box-sizing: border-box;
     border-radius: 10px;
-    color: var(--text-color);
-    width: 100%;
-    padding: 0.5rem 1rem 1.5rem;
-
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
-input:not([type="radio"]), textarea{
-    width: 100%;          /* ความกว้าง */
+input:not([type="radio"]),
+textarea {
+    width: 100%;
+    /* ความกว้าง */
 }
 
 input:not([type="radio"]) {
-    height: 35px;          /* ความสูง */
+    height: 35px;
+    /* ความสูง */
 }
 
 .name-Form,
@@ -47,7 +46,7 @@ input:not([type="radio"]) {
     font-size: 15px;
 }
 
-.selectshow-Form .selectshow-Radio{
+.selectshow-Form .selectshow-Radio {
     display: none;
 }
 
@@ -63,42 +62,11 @@ input:not([type="radio"]) {
     color: var(--text-color);
 }
 
-.contact_Info {
-    width: 100%;
-    padding: 24px;
+.contact-Chat-Container,
+.contact-Chat-Button {
+    display: none;
 }
 
-.contact_InfoTopic {
-    color: var(--text-color);
-    font-size: x-large;
-    margin-bottom: 20px;
-}
-
-.facebook_InfoButton_Container,
-.gmail_InfoButton_Container,
-.whatapps_InfoButton_Container {
-    margin-bottom: 1.5%;
-}
-
-.facebook_InfoButton,
-.gmail_InfoButton,
-.whatapps_InfoButton {
-    font-size: large;
-    color: var(--text-color);
-    text-decoration: none;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    /* transition: font-size 0.2s, color 0.2s; */
-}
-
-.facebook_InfoIcon,
-.gmail_InfoIcon,
-.whatapps_InfoIcon {
-    width: 40px;
-    height: 40px;
-    /* transition: width 0.2s, height 0.2s; */
-}
 
 /* .facebook_InfoButton:hover,
 .gmail_InfoButton:hover,
@@ -116,70 +84,86 @@ input:not([type="radio"]) {
 } */
 
 /************************ Tablet Responsive ************************/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
     /********************* Contact Container *********************/
-    .contact_Form_Container {
-        width: 90%;
-        margin-top: 10%;
-        margin-left: auto;
-        margin-right: auto;
+    .contact-Form-Container {
+        padding: 0.5rem 1rem 1.5rem;
+        margin: 10% auto 0 auto;
         background-color: rgba(128, 128, 128, 0.2);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 0 5%;
-        border-radius: 12px;
-        padding: 24px 12px;
-    }
-
-    .contact_Form {
-        color: var(--text-color);
-        font-size: 20px;
-        width: 100%;
-        padding: 12px;
-    }
-
-    .contact_FormButton {
-        margin-top: 2%;
-        font-size: 20px;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-    }
-
-    .contact_Info {
-        width: 100%;
-        padding: 24px;
-    }
-
-    .contact_InfoTopic {
-        color: var(--text-color);
-        font-size: x-large;
-        margin-bottom: 20px;
-    }
-
-    .facebook_InfoButton_Container,
-    .gmail_InfoButton_Container,
-    .whatapps_InfoButton_Container {
-        margin-bottom: 1.5%;
-    }
-
-    .facebook_InfoButton,
-    .gmail_InfoButton,
-    .whatapps_InfoButton {
-        font-size: large;
-        color: var(--text-color);
-        text-decoration: none;
-        gap: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 90%;
         display: flex;
-        align-items: center;
-        /* transition: font-size 0.2s, color 0.2s; */
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    .facebook_InfoIcon,
-    .gmail_InfoIcon,
-    .whatapps_InfoIcon {
-        width: 40px;
-        height: 40px;
-        /* transition: width 0.2s, height 0.2s; */
+    .name-Form label,
+    .email-Form label,
+    .description-Form label,
+    .phone-Form label,
+    .selectshow-Form label {
+        font-size: 24px;
+    }
+
+    .selectshow-Form .selectshow-Selection select {
+        display: none;
+    }
+
+    .selectshow-Form .selectshow-Radio {
+        display: inline-block;
+        padding: 0 10px 0 10px;
+    }
+
+    .selectshow-Form .selectshow-Radio label {
+        padding: 0 10px 0 10px;
+    }
+
+    .submit-Form button {
+        padding: 0.5rem 0.1rem;
+        width: 150px;
+        font-size: 22px;
+    }
+
+    .contact-Chat-Container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact-Chat-Topic {
+        display: flex;
+
+    }
+
+    .contact-Chat-Topic span {
+        font-size: 30px;
+        color: var(--text-color);
+    }
+
+    .contact-Chat-Button {
+        display: flex;
+        flex-direction: column;
+        /* padding: 0 0.5rem; */
+    }
+
+    .contact-Chat-Button a {
+        color: var(--text-color);
+        font-size: 22px;
+        margin: 0.5rem;
+        text-decoration: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contact-Chat-Button img {
+        width: 45px;
+        height: 45px;
     }
 
     /* .facebook_InfoButton:hover,
@@ -197,3 +181,9 @@ input:not([type="radio"]) {
     height: 45px;
 } */
 }
+
+/*********************** Small desktops/laptops ***********************/
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+
+/*********************** Large desktops ***********************/
+@media only screen and (min-width: 1280px) {}

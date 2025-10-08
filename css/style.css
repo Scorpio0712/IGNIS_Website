@@ -117,6 +117,7 @@ nav {
     position: absolute;
     display: inline-block;
     cursor: pointer;
+    margin-top: 10px;
     right: 1rem;
 }
 
@@ -156,7 +157,7 @@ nav {
 .pixellightpic-Topic {
     width: 100%;
     height: 250px;
-    margin-top: 2.5%;
+    margin-top: 5%;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -200,7 +201,7 @@ nav {
 }
 
 /******************************** Footer ********************************/
-footer{
+footer {
     margin-top: 20%;
     height: 130px;
 }
@@ -212,13 +213,6 @@ footer{
     gap: 5%;
     /* ระยะห่างระหว่างโลโก้ */
     margin-bottom: 8px;
-}
-
-.facebook_Button,
-.gmail_Button,
-.whatapps_Button {
-    margin-bottom: 0;
-    /* ยกเลิก margin ล่างเดิม */
 }
 
 .facebook_Icon,
@@ -240,82 +234,74 @@ footer{
     color: var(--text-color);
 }
 
-
-@media (min-width: 768px) and (max-width: 1199px) {
+/*********************** Tablets ***********************/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
     /******************************* Navbar *******************************/
+    .nav-con .logo img {
+        width: 85px;
+        height: 65px;
+    }
+
+    .menu li a {
+        font-size: 20px;
+    }
+
+    /* .menu li a:hover {
+    color: var(--secondary-color);
+    transform: translateX(8px);
+    } */
+
+    /********** Hamburger Menu **********/
     .ham-menu {
-        display: none;
+        margin-top: 10px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 40px;
+        height: 6px;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 12px) rotate(-45deg);
+    }
+
+    .change .bar3 {
+        transform: translate(0, -12px) rotate(45deg);
     }
 
     /********************* Topic *********************/
-    .performance_TopicPic,
-    .contact_TopicPic,
-    .firePic_TopicPic,
-    .pixellightPic_TopicPic {
-        width: 100%;
+    .performance-Topic,
+    .contact-Topic,
+    .firepic-Topic,
+    .pixellightpic-Topic {
         height: 300px;
-        margin-top: 5%;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
+        margin-top: 10%;
     }
 
-    .performance_TopicPic::before,
-    .contact_TopicPic::before,
-    .firePic_TopicPic::before,
-    .pixellightPic_TopicPic::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('../images/fire_14.JPG');
-        background-size: cover, cover;
-        background-position: center, center;
-        background-repeat: no-repeat, no-repeat;
-        opacity: 0.5;
-        z-index: 1;
+    .performance-Topic span,
+    .contact-Topic span,
+    .firepic-Topic span,
+    .pixellightpic-Topic span {
+        font-size: 55px;
+        line-height: 1;
     }
 
-    .performance_TopicText,
-    .contact_TopicText,
-    .firePic_TopicText,
-    .pixellightPic_TopicText {
-        position: relative;
-        font-size: 60px;
-        font-weight: bold;
-        color: var(--text-color);
-        line-height: 300px;
-        z-index: 2;
-    }
-
-    .contact_TopicText {
-        font-size: 70px;
+    .contact-Topic span {
+        font-size: 65px;
     }
 
     /******************************** Footer ********************************/
-    .footer-Container {
-        margin-top: 20%;
+    footer {
+        margin-top: 10%;
         height: 130px;
-        width: 100%;
     }
 
     .footer-Icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3%;
-        /* ระยะห่างระหว่างโลโก้ */
-        margin-bottom: 8px;
-    }
-
-    .facebook_Button,
-    .gmail_Button,
-    .whatapps_Button {
-        margin-bottom: 0;
-        /* ยกเลิก margin ล่างเดิม */
+        gap: 3%; /* ระยะห่างระหว่างโลโก้ */
+        margin-bottom: 10px;
     }
 
     .facebook_Icon,
@@ -327,21 +313,15 @@ footer{
     .gmail_Icon {
         width: 40px;
         height: 35px;
-
     }
-
-    /* 
-    .facebook_Icon:hover,
-    .gmail_Icon:hover,
-    .whatapps_Icon:hover {
-    width: 50px;
-    height: 50px;
-    } */
 
     .footer_text {
         font-size: 16px;
-        margin-top: 1%;
-        text-align: center;
-        color: var(--text-color);
     }
 }
+
+/*********************** Small desktops/laptops ***********************/
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+
+/*********************** Large desktops ***********************/
+@media only screen and (min-width: 1280px) {}
