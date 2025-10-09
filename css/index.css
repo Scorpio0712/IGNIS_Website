@@ -233,14 +233,14 @@
     color: var(--primary-color);
 }
 
-.fire-Twotype-Content,
-.pixellight-Twotype-Content {
+.fire-Twotype-Paragraph,
+.pixellight-Twotype-Paragraph {
     margin-top: 2.5%;
     font-size: 18px;
 }
 
-.fire-Twotype-Content p,
-.pixellight-Twotype-Content p {
+.fire-Twotype-Paragraph p,
+.pixellight-Twotype-Paragraph p {
     color: var(--text-color);
 }
 
@@ -256,7 +256,7 @@
     align-items: center;
 }
 
-.customers-Topic h2 {
+.customers-Topic h1 {
     color: var(--text-color);
 }
 
@@ -359,7 +359,7 @@
         margin: 0 2rem;
         width: 500px;
         height: 330px;
-        
+
     }
 
     /******************************** FFQ Content ********************************/
@@ -428,8 +428,8 @@
         font-size: 32px;
     }
 
-    .fire-Twotype-Content,
-    .pixellight-Twotype-Content {
+    .fire-Twotype-Paragraph,
+    .pixellight-Twotype-Paragraph {
         margin-top: 2%;
         font-size: 24px;
     }
@@ -439,7 +439,7 @@
         margin-top: 10%;
     }
 
-    .customers-Topic h2 {
+    .customers-Topic h1 {
         color: var(--text-color);
         font-size: 32px;
     }
@@ -456,13 +456,15 @@
     }
 
     .customers-Pic-Slider img {
-        width: 200%; /* กว้างเท่ากับ container */
+        width: 200%;
+        /* กว้างเท่ากับ container */
     }
 
     @keyframes scroll-left {
         0% {
             transform: translateX(0);
         }
+
         100% {
             transform: translateX(-200%);
             /* เลื่อนเท่ากับความกว้างของภาพเดียว */
@@ -471,7 +473,201 @@
 }
 
 /*********************** Small desktops/laptops ***********************/
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /******************************** Header ********************************/
+    .head-Name-Container {
+        margin-top: 5%;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .head-Name-Container p {
+        font-size: 80px;
+        padding: 0 0 2.5rem 3rem;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .head-Name-Container span {
+        font-size: 28px;
+    }
+
+    .logo-Topic-Container {
+        display: none;
+    }
+
+    .head-Name-Container::before {
+        display: none;
+    }
+
+    .topic-Pic-Container img {
+        display: inline-block;
+        width: 550px;
+        object-fit: cover;
+    }
+
+    /******************************** Story IGNIS ********************************/
+    .story-Container {
+        margin-top: 10%;
+        padding: 0 3rem;
+        width: 100%;
+    }
+
+    .first-Story span {
+        font-size: 50px;
+    }
+
+    .first-Story p,
+    .second-Story p {
+        font-size: 28px;
+    }
+
+    .second-Story p {
+        margin-top: 5%;
+    }
+
+    .first-Story-Pic img,
+    .second-Story-Pic img {
+        margin-top: 5%;
+        width: 700px;
+        height: 420px;
+        object-fit: cover;
+        border: 1px solid var(--text-color);
+    }
+
+    /******************************** FFQ Content ********************************/
+    .ffq-Container {
+        margin-top: 10%;
+        padding: 0 3rem;
+        width: 100%;
+    }
+
+    .headTopic-FFQ h1 {
+        font-size: 50px;
+    }
+
+    .intro-FFQ {
+        margin-top: 2%
+    }
+
+    .intro-FFQ p {
+        font-size: 28px;
+    }
+
+    .content-FFQ {
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .paragraph-Flexible,
+    .paragraph-Friendly,
+    .paragraph-Quality {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .topic-Flexible,
+    .topic-Friendly,
+    .topic-Quality {
+        font-size: 28px;
+    }
+
+    .story-Flexible,
+    .story-Friendly,
+    .story-Quality {
+        font-size: 28px;
+    }
+
+    .outro-FFQ {
+        margin-top: 5%;
+        font-size: 28px;
+    }
+
+    /******************************** 2 Type, 4 Theme ********************************/
+    .twoType-Container {
+        margin-top: 10%;
+        padding: 0 3rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .twoType-Topic h1 {
+        font-size: 50px;
+    }
+
+    .twoType-Content {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .fire-Twotype-Pic,
+    .pixellight-Twotype-Pic {
+        margin-top: 5%;
+    }
+
+    .fire-Twotype-Pic img,
+    .pixellight-Twotype-Pic img {
+        width: 400px;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .fire-Twotype-Topic h2,
+    .pixellight-Twotype-Topic h2 {
+        font-size: 32px;
+    }
+
+    .fire-Twotype-Paragraph,
+    .pixellight-Twotype-Paragraph {
+        font-size: 28px;
+    }
+
+    /******************************** Customers ********************************/
+    .customers-Container {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .customers-Topic h1 {
+        font-size: 50px;
+    }
+
+    .customers-Pic-Container {
+        margin-top: 2.5%;
+    }
+
+    .customers-Pic-Slider {
+        display: flex;
+        width: calc(300%);
+        /* 2 เท่าของ container */
+        animation: scroll-left 20s linear infinite;
+    }
+
+    .customers-Pic-Slider img {
+        width: 150%;
+        /* กว้างเท่ากับ container */
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-150%);
+            /* เลื่อนเท่ากับความกว้างของภาพเดียว */
+        }
+    }
+}
 
 /*********************** Large desktops ***********************/
 @media only screen and (min-width: 1280px) {}

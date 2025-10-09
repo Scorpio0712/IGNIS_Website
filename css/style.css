@@ -55,7 +55,6 @@ nav {
     left: 0;
     background-color: var(--primary-color);
     opacity: 0;
-    visibility: hidden;
     transform: translateY(-15px);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     z-index: 1000;
@@ -206,7 +205,7 @@ footer {
     height: 130px;
 }
 
-.footer-Icons {
+.footer-Icons-Container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,19 +214,19 @@ footer {
     margin-bottom: 8px;
 }
 
-.facebook_Icon,
-.whatapps_Icon {
+.facebook-Button img,
+.whatapps-Button img {
     width: 25px;
     height: 25px;
 }
 
-.gmail_Icon {
+.gmail-Button img {
     width: 35px;
     height: 30px;
 
 }
 
-.footer_text {
+.footer-text-Container p {
     font-size: 12px;
     margin-top: 1%;
     text-align: center;
@@ -299,29 +298,100 @@ footer {
         height: 130px;
     }
 
-    .footer-Icons {
-        gap: 3%; /* ระยะห่างระหว่างโลโก้ */
+    .footer-Icons-Container {
+        gap: 3%;
+        /* ระยะห่างระหว่างโลโก้ */
         margin-bottom: 10px;
     }
 
-    .facebook_Icon,
-    .whatapps_Icon {
+    .facebook-Button img,
+    .whatapps-Button img {
         width: 30px;
         height: 30px;
     }
 
-    .gmail_Icon {
+    .gmail-Button img {
         width: 40px;
         height: 35px;
     }
 
-    .footer_text {
+    .footer-text-Container p {
         font-size: 16px;
     }
 }
 
 /*********************** Small desktops/laptops ***********************/
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    /******************************* Navbar *******************************/
+
+    .nav-con {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1.5rem;
+        height: 120px;
+    }
+
+    .nav-con .logo img {
+        width: 110px;
+        height: 90px;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        max-height: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    .menu li{
+        margin: 0;
+        padding: 0 1rem;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu li a {
+        font-size: 24px;
+        border: none;
+    }
+
+    /************************ Footer ************************/
+    footer {
+        margin-top: 10%;
+        height: 175px;
+    }
+
+    .footer-Icons-Container {
+        gap: 3%;
+        /* ระยะห่างระหว่างโลโก้ */
+        margin-bottom: 10px;
+    }
+
+    .facebook-Button img,
+    .whatapps-Button img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .gmail-Button img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .footer-text-Container p {
+        font-size: 22px;
+    }
+}
 
 /*********************** Large desktops ***********************/
 @media only screen and (min-width: 1280px) {}
