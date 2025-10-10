@@ -483,14 +483,14 @@
     }
 
     .head-Name-Container p {
-        font-size: 80px;
-        padding: 0 0 2.5rem 3rem;
+        font-size: 90px;
+        padding: 0 0 3rem 3rem;
         text-align: left;
         justify-content: center;
     }
 
     .head-Name-Container span {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .logo-Topic-Container {
@@ -515,25 +515,26 @@
     }
 
     .first-Story span {
-        font-size: 50px;
+        font-size: 46px;
     }
 
     .first-Story p,
     .second-Story p {
-        font-size: 28px;
+        font-size: 26px;
     }
 
-    .second-Story p {
+    .second-Story{
         margin-top: 5%;
+    }
+
+    .first-Story-Pic, .second-Story-Pic {
+        margin-top: 2.5%;
     }
 
     .first-Story-Pic img,
     .second-Story-Pic img {
-        margin-top: 5%;
-        width: 700px;
-        height: 420px;
-        object-fit: cover;
-        border: 1px solid var(--text-color);
+        width: 550px;
+        height: 320px;
     }
 
     /******************************** FFQ Content ********************************/
@@ -544,7 +545,7 @@
     }
 
     .headTopic-FFQ h1 {
-        font-size: 50px;
+        font-size: 46px;
     }
 
     .intro-FFQ {
@@ -552,12 +553,12 @@
     }
 
     .intro-FFQ p {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .content-FFQ {
         width: 100%;
-        margin-top: 5%;
+        margin-top: 2.5%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -574,18 +575,18 @@
     .topic-Flexible,
     .topic-Friendly,
     .topic-Quality {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .story-Flexible,
     .story-Friendly,
     .story-Quality {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .outro-FFQ {
-        margin-top: 5%;
-        font-size: 28px;
+        margin-top: 2.5%;
+        font-size: 24px;
     }
 
     /******************************** 2 Type, 4 Theme ********************************/
@@ -597,7 +598,7 @@
     }
 
     .twoType-Topic h1 {
-        font-size: 50px;
+        font-size: 46px;
     }
 
     .twoType-Content {
@@ -617,8 +618,7 @@
     .fire-Twotype-Pic img,
     .pixellight-Twotype-Pic img {
         width: 400px;
-        height: 280px;
-        object-fit: cover;
+        height: 240px;
     }
 
     .fire-Twotype-Topic h2,
@@ -628,7 +628,8 @@
 
     .fire-Twotype-Paragraph,
     .pixellight-Twotype-Paragraph {
-        font-size: 28px;
+        padding: 0 1rem;
+        font-size: 24px;
     }
 
     /******************************** Customers ********************************/
@@ -638,7 +639,7 @@
     }
 
     .customers-Topic h1 {
-        font-size: 50px;
+        font-size: 44px;
     }
 
     .customers-Pic-Container {

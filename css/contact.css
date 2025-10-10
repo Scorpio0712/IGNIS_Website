@@ -148,7 +148,6 @@ input:not([type="radio"]) {
     .contact-Chat-Button {
         display: flex;
         flex-direction: column;
-        /* padding: 0 0.5rem; */
     }
 
     .contact-Chat-Button a {
@@ -166,24 +165,108 @@ input:not([type="radio"]) {
         height: 45px;
     }
 
-    /* .facebook_InfoButton:hover,
-.gmail_InfoButton:hover,
-.whatapps_InfoButton:hover {
-    cursor: pointer;
-    color: var(--primary-color);
-    font-size: x-large;
-}
-
-.facebook_InfoButton:hover .facebook_InfoIcon,
-.gmail_InfoButton:hover .gmail_InfoIcon,
-.whatapps_InfoButton:hover .whatapps_InfoIcon {
-    width: 45px;
-    height: 45px;
-} */
 }
 
 /*********************** Small desktops/laptops ***********************/
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /********************* Contact Container *********************/
+    .contact-Form-Container {
+        padding: 1rem 1rem 1.5rem;
+        margin: 10% auto 0 auto;
+        background-color: rgba(128, 128, 128, 0.2);
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .name-Form label,
+    .email-Form label,
+    .description-Form label,
+    .phone-Form label,
+    .selectshow-Form label {
+        font-size: 24px;
+    }
+
+    input:not([type="radio"]) {
+        height: 37.5px;
+        /* ความสูง */
+        border-radius: 8px;
+    }
+
+    textarea {
+        border-radius: 8px;
+    }
+
+    .selectshow-Form .selectshow-Selection select {
+        display: none;
+    }
+
+    .selectshow-Form .selectshow-Radio {
+        display: inline-block;
+        padding: 0 10px 0 10px;
+    }
+
+    .selectshow-Form .selectshow-Radio label {
+        padding: 0 10px 0 10px;
+    }
+
+    .submit-Form button {
+        padding: 0.5rem 0.1rem;
+        width: 200px;
+        color: var(--primary-color);
+        font-size: 24px;
+    }
+
+    .submit-Form button:hover {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .contact-Chat-Container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact-Chat-Topic span {
+        font-size: 28px;
+        color: var(--text-color);
+    }
+
+    .contact-Chat-Button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-Chat-Button a {
+        color: var(--text-color);
+        font-size: 24px;
+        margin: 0.75rem;
+        text-decoration: none;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+    }
+
+    .contact-Chat-Button img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-Chat-Button a:hover  {
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+}
 
 /*********************** Large desktops ***********************/
 @media only screen and (min-width: 1280px) {}

@@ -161,13 +161,6 @@
     text-decoration: none;
 }
 
-/*.fireperformance-Button button:hover,
-    .pixellightPerformance_Button button:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--secondary-color);
-    } */
-
 /*********************** Tablets ***********************/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -226,6 +219,7 @@
         0% {
             transform: translateX(0);
         }
+
         100% {
             transform: translateX(-158vw);
         }
@@ -235,6 +229,7 @@
         0% {
             transform: translateX(-158vw);
         }
+
         100% {
             transform: translateX(0);
         }
@@ -257,7 +252,110 @@
 }
 
 /*********************** Small desktops/laptops ***********************/
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /********************* Performance Intro *********************/
+    .performance-Intro {
+        padding: 0 3rem;
+        margin-top: 10%;
+    }
+
+    .performance-Intro p {
+        font-size: 24px;
+    }
+
+    /********************* Fire & Pixel Light performance Content *********************/
+    .fireperformance-Container,
+    .pixellightperformance-Container {
+        margin-top: 10%;
+        padding: 0 3rem;
+    }
+
+    .fireperformance-Topic h2,
+    .pixellightperformance-Topic h2 {
+        font-size: 40px;
+    }
+
+    .fireperformance-Topic h2::before,
+    .fireperformance-Topic h2::after {
+        height: 3px;
+        width: 450px;
+        border-radius: 1px;
+    }
+
+    .pixellightperformance-Topic h2::before,
+    .pixellightperformance-Topic h2::after {
+        height: 3px;
+        width: 600px;
+        border-radius: 1px;
+    }
+
+    .fireperformance-Content {
+        margin-top: 5%;
+    }
+
+    .fireperformance-Content .fireperformance-Paragraph p,
+    .pixellightperformance-Content .pixellightperformance-Paragraph p {
+        font-size: 24px;
+    }
+
+    .fireperformance-PicRowOne,
+    .pixellightperformance-PicRowOne {
+        width: 260vw;
+    }
+
+    .firePerformance-PicRowTwo,
+    .pixellightperformance-PicRowTwo {
+        width: 260vw;
+    }
+
+    .fireperformance-PicRowOne img,
+    .firePerformance-PicRowTwo img,
+    .pixellightperformance-PicRowOne img,
+    .pixellightperformance-PicRowTwo img {
+        width: 40vw;
+        height: 200px;
+    }
+
+    @keyframes scroll-right {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-125vw);
+        }
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(-125vw);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .fireperformance-Button,
+    .pixellightperformance-Button {
+        margin-top: 10%;
+    }
+
+    .fireperformance-Button a,
+    .pixellightperformance-Button a {
+        font-size: 26px;
+        padding: 0.75rem;
+    }
+
+    .fireperformance-Button a:hover,
+    .pixellightperformance-Button a:hover {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        transition: 0.4s ease;
+    }
+
+}
 
 /*********************** Large desktops ***********************/
 @media only screen and (min-width: 1280px) {}
