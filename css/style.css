@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -413,4 +413,95 @@ footer {
 }
 
 /*********************** Large desktops ***********************/
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+    .nav-con {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        height: 85px;
+    }
+
+    .nav-con .logo img {
+        width: 85px;
+        height: 65px;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        max-height: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 0 1.25rem;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu li a {
+        font-size: 18px;
+        border: none;
+    }
+
+    .menu li a:hover {
+        color: var(--secondary-color);
+    }
+
+    /************************ Topic ************************/
+    .performance-Topic,
+    .firepic-Topic,
+    .pixellightpic-Topic,
+    .contact-Topic {
+        margin-top: 10%;
+        height: 350px;
+    }
+
+    .performance-Topic span,
+    .firepic-Topic span,
+    .pixellightpic-Topic span,
+    .contact-Topic span {
+        font-size: 75px;
+    }
+
+    .contact-Topic span {
+        font-size: 85px;
+    }
+
+    /************************ Footer ************************/
+    footer {
+        margin-top: 10%;
+        height: 125px;
+    }
+
+    .footer-Icons-Container {
+        gap: 3%; /* ระยะห่างระหว่างโลโก้ */
+        margin-bottom: 10px;
+    }
+
+    .facebook-Button img,
+    .whatapps-Button img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .gmail-Button img {
+        width: 45px;
+        height: 40px;
+    }
+
+    .footer-text-Container p {
+        font-size: 16px;
+    }
+}

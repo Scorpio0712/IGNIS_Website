@@ -4,7 +4,6 @@
 /******************************** Header ********************************/
 .head-Name-Container {
     margin-top: 5%;
-    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,12 +73,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
 }
 
 .first-Story {
-    font-size: 20px;
     width: 100%;
+}
+
+.first-Story p {
+    font-size: 20px;
     color: var(--text-color);
     line-height: 1.5;
     text-indent: 10%;
@@ -120,8 +121,8 @@
 
 .first-Story-Pic img,
 .second-Story-Pic img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -523,11 +524,12 @@
         font-size: 26px;
     }
 
-    .second-Story{
+    .second-Story {
         margin-top: 5%;
     }
 
-    .first-Story-Pic, .second-Story-Pic {
+    .first-Story-Pic,
+    .second-Story-Pic {
         margin-top: 2.5%;
     }
 
@@ -671,4 +673,214 @@
 }
 
 /*********************** Large desktops ***********************/
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+
+    /******************************** Header ********************************/
+    .head-Name-Container {
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .head-Name-Container p {
+        font-size: 100px;
+        padding: 0 0 5rem 0;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .head-Name-Container span {
+        font-size: 32px;
+    }
+
+    .logo-Topic-Container {
+        display: none;
+    }
+
+    .head-Name-Container::before {
+        display: none;
+    }
+
+    .topic-Pic-Container img {
+        display: inline-block;
+        width: 720px;
+        object-fit: cover;
+    }
+
+    /******************************** Story IGNIS ********************************/
+    .story-Container {
+        margin-top: 10%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .first-Story,
+    .second-Story {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .second-Story {
+        margin-top: 10%;
+    }
+
+    .first-Story span {
+        font-size: 40px;
+    }
+
+    .first-Story p,
+    .second-Story p {
+        font-size: 20px;
+        width: 500px;
+    }
+
+    .first-Story-Pic,
+    .second-Story-Pic {
+        margin-top: 0;
+        display: flex;
+    }
+
+    .first-Story-Pic img,
+    .second-Story-Pic img {
+        width: 500px;
+        height: 300px;
+        
+    }
+
+    /******************************** FFQ Content ********************************/
+    .ffq-Container {
+        margin-top: 10%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .headTopic-FFQ h1 {
+        font-size: 44px;
+    }
+
+    .intro-FFQ {
+        margin-top: 2%
+    }
+
+    .intro-FFQ p {
+        font-size: 20px;
+    }
+
+    .content-FFQ {
+        width: 100%;
+        margin-top: 2.5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .paragraph-Flexible,
+    .paragraph-Friendly,
+    .paragraph-Quality {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .topic-Flexible,
+    .topic-Friendly,
+    .topic-Quality {
+        font-size: 20px;
+    }
+
+    .story-Flexible,
+    .story-Friendly,
+    .story-Quality {
+        font-size: 20px;
+    }
+
+    .outro-FFQ {
+        margin-top: 2.5%;
+        font-size: 20px;
+    }
+
+    /******************************** 2 Type, 4 Theme ********************************/
+    .twoType-Container {
+        margin-top: 10%;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .twoType-Topic h1 {
+        font-size: 44px;
+    }
+
+    .twoType-Content {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .fire-Twotype-Pic,
+    .pixellight-Twotype-Pic {
+        margin-top: 5%;
+    }
+
+    .fire-Twotype-Pic img,
+    .pixellight-Twotype-Pic img {
+        width: 400px;
+        height: 260px;
+    }
+
+    .fire-Twotype-Topic h2,
+    .pixellight-Twotype-Topic h2 {
+        font-size: 30px;
+    }
+
+    .fire-Twotype-Paragraph,
+    .pixellight-Twotype-Paragraph {
+        padding: 0 2rem;
+        font-size: 20px;
+    }
+
+    /******************************** Customers ********************************/
+    .customers-Container {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .customers-Topic h1 {
+        font-size: 40px;
+    }
+
+    .customers-Pic-Container {
+        margin-top: 2.5%;
+    }
+
+    .customers-Pic-Slider {
+        display: flex;
+        width: calc(250%);
+        /* 2 เท่าของ container */
+        animation: scroll-left 20s linear infinite;
+    }
+
+    .customers-Pic-Slider img {
+        width: 125%;
+        /* กว้างเท่ากับ container */
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-125%);
+            /* เลื่อนเท่ากับความกว้างของภาพเดียว */
+        }
+    }
+}
