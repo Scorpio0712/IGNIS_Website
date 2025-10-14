@@ -73,7 +73,7 @@
 /* Seamless Infinite Loop Animation */
 .fireperformance-PicRowOne,
 .pixellightperformance-PicRowOne {
-    width: 200%;
+    width: 1620px;
     display: flex;
     position: relative;
     animation: scroll-right 10s linear infinite;
@@ -82,11 +82,10 @@
 
 .firePerformance-PicRowTwo,
 .pixellightperformance-PicRowTwo {
-    width: 200%;
+    width: 1620px;
     display: flex;
     position: relative;
     animation: scroll-left 10s linear infinite;
-
 }
 
 .fireperformance-PicRowOne img,
@@ -107,14 +106,14 @@
     }
 
     100% {
-        transform: translate3d(-106%, 0, 0);
+        transform: translate3d(-810px, 0, 0);
         /* เลื่อนแค่ครึ่งเดียว */
     }
 }
 
 @keyframes scroll-left {
     0% {
-        transform: translate3d(-106%, 0, 0);
+        transform: translate3d(-810px, 0, 0);
         /* เริ่มจากครึ่งหลัง */
     }
 
@@ -191,12 +190,19 @@
         border-radius: 2px;
     }
 
+    .fireperformance-PicRowOne,
+    .pixellightperformance-PicRowOne,
+    .firePerformance-PicRowTwo,
+    .pixellightperformance-PicRowTwo {
+        width: 1980px;
+    }
+
     .fireperformance-PicRowOne img,
     .firePerformance-PicRowTwo img,
     .pixellightperformance-PicRowOne img,
     .pixellightperformance-PicRowTwo img {
-        width: 480px;
-        height: 220px;
+        width: 310px;
+        height: 180px;
     }
 
     /* Keyframes สำหรับ Seamless Loop */
@@ -206,14 +212,14 @@
         }
 
         100% {
-            transform: translate3d(-97%, 0, 0);
+            transform: translate3d(-990px, 0, 0);
             /* เลื่อนแค่ครึ่งเดียว */
         }
     }
 
     @keyframes scroll-left {
         0% {
-            transform: translate3d(-97%, 0, 0);
+            transform: translate3d(-990px, 0, 0);
             /* เริ่มจากครึ่งหลัง */
         }
 
@@ -287,12 +293,19 @@
         font-size: 24px;
     }
 
+    .fireperformance-PicRowOne,
+    .pixellightperformance-PicRowOne,
+    .firePerformance-PicRowTwo,
+    .pixellightperformance-PicRowTwo {
+        width: 2340px;
+    }
+
     .fireperformance-PicRowOne img,
     .firePerformance-PicRowTwo img,
     .pixellightperformance-PicRowOne img,
     .pixellightperformance-PicRowTwo img {
-        width: 540px;
-        height: 260px;
+        width: 370px;
+        height: 210px;
     }
 
     /* Keyframes สำหรับ Seamless Loop */
@@ -302,14 +315,14 @@
         }
 
         100% {
-            transform: translate3d(-90.5%, 0, 0);
+            transform: translate3d(-1170px, 0, 0);
             /* เลื่อนแค่ครึ่งเดียว */
         }
     }
 
     @keyframes scroll-left {
         0% {
-            transform: translate3d(-90.5%, 0, 0);
+            transform: translate3d(-1170px, 0, 0);
             /* เริ่มจากครึ่งหลัง */
         }
 
@@ -397,15 +410,15 @@
     .pixellightperformance-PicRowOne,
     .firePerformance-PicRowTwo,
     .pixellightperformance-PicRowTwo {
-        width: 200%;
+        width: 2700px;
     }
 
     .fireperformance-PicRowOne img,
     .firePerformance-PicRowTwo img,
     .pixellightperformance-PicRowOne img,
     .pixellightperformance-PicRowTwo img {
-        width: 610px;
-        height: 280px;
+        width: 430px;
+        height: 240px;
     }
 
     /* Keyframes สำหรับ Seamless Loop */
@@ -415,14 +428,14 @@
         }
 
         100% {
-            transform: translate3d(-80%, 0, 0);
+            transform: translate3d(-1350px, 0, 0);
             /* เลื่อนแค่ครึ่งเดียว */
         }
     }
 
     @keyframes scroll-left {
         0% {
-            transform: translate3d(-80%, 0, 0);
+            transform: translate3d(-1350px, 0, 0);
             /* เริ่มจากครึ่งหลัง */
         }
 

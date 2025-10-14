@@ -259,6 +259,7 @@
 
 .customers-Topic h1 {
     color: var(--text-color);
+    font-size: 24px;
 }
 
 .customers-Pic-Container {

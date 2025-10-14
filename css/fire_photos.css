@@ -95,7 +95,7 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-    
+
     .gallery-Grid img {
         border-radius: 20px;
     }
@@ -108,4 +108,34 @@
 }
 
 /*********************** Large desktops ***********************/
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+
+    /******************* Fire performance Video *******************/
+    .firevideo-Container {
+        padding: 0 2rem;
+    }
+
+    .firevideo-Container iframe {
+        width: 780px;
+        height: 440px;
+    }
+
+    /********************* Gallery *********************/
+    .gallery-Grid {
+        margin-top: 10%;
+        padding: 0 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .gallery-Grid img {
+        aspect-ratio: 16 / 9;
+        border-radius: 20px;
+    }
+
+    .gallery-Grid img:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: 100%;
+        justify-self: auto;
+    }
+}

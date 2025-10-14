@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -149,6 +149,10 @@ nav {
     max-height: 300px;
 }
 
+.menu li a:hover {
+    color: var(--secondary-color);
+}
+
 /********************* Topic *********************/
 .performance-Topic,
 .contact-Topic,
@@ -246,10 +250,9 @@ footer {
         font-size: 20px;
     }
 
-    /* .menu li a:hover {
-    color: var(--secondary-color);
-    transform: translateX(8px);
-    } */
+    .menu li a:hover {
+        color: var(--secondary-color);
+    }
 
     /********** Hamburger Menu **********/
     .ham-menu {
@@ -365,6 +368,10 @@ footer {
         border: none;
     }
 
+    .menu li a:hover {
+        color: var(--secondary-color);
+    }
+
     /************************ Topic ************************/
     .performance-Topic,
     .firepic-Topic,
@@ -392,7 +399,8 @@ footer {
     }
 
     .footer-Icons-Container {
-        gap: 3%; /* ระยะห่างระหว่างโลโก้ */
+        gap: 3%;
+        /* ระยะห่างระหว่างโลโก้ */
         margin-bottom: 10px;
     }
 
@@ -486,7 +494,8 @@ footer {
     }
 
     .footer-Icons-Container {
-        gap: 3%; /* ระยะห่างระหว่างโลโก้ */
+        gap: 3%;
+        /* ระยะห่างระหว่างโลโก้ */
         margin-bottom: 10px;
     }
 
